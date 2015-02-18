@@ -1,3 +1,12 @@
 @charset "UTF-8";
 
+#outerWrapper {width: 80%;}
+
 main {display: block;}
+
+h1 {text-align: center;}
+
+.columns {width: 20%;
+		float: left;}
+
+.colclear {clear: both}
