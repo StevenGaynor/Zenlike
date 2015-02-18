@@ -1,6 +1,3 @@
 @charset "UTF-8";
 
-.cssTest	{width: 20%;
-		float: left;}
-		
-#under {clear: both;}
+main {display: block;}
