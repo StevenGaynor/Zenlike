@@ -6,7 +6,7 @@ main {display: block;}
 
 h1 {text-align: center;}
 
-.columns {width: 20%;
-		float: left;}
+p {width: 70%;}
 
-.colclear {clear: both}
+img {display: block;
+	}
