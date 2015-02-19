@@ -8,7 +8,7 @@
 main {display: block;
 	 width: 100%;
 	 margin: 0 auto 0 auto;
-	 border: 1px solid #044B10;}
+	 border: 1px solid #044B10;} /*darkest green*/
 
 h1, h2 {text-align: center;}
 
@@ -16,6 +16,6 @@ img {display: block;
 	}
 
 section	{text-align: justify;
-		 padding: 0 20px 0 20px;
+		 padding: 0 2% 0 2%;
 		}
 
