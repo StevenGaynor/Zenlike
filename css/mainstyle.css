@@ -1,12 +1,21 @@
 @charset "UTF-8";
 
-#outerWrapper {width: 80%;}
+/*container*/
+#outerWrapper {width: 100%;
+			   margin: 0 auto 0 auto;}
 
+/*main content*/			   
 main {display: block;
 	 width: 100%;
-	 margin: 0 auto 0 auto;}
+	 margin: 0 auto 0 auto;
+	 border: 1px solid #044B10;}
 
 h1, h2 {text-align: center;}
 
 img {display: block;
 	}
+
+section	{text-align: justify;
+		 padding: 0 20px 0 20px;
+		}
+
