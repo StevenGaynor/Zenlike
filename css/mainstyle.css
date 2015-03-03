@@ -3,53 +3,81 @@
 /*body*/
 body 	{font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
 		 color: #000000;
-		 background-color: #FFFFFF;
+		 background-color: #2C6871;
 				}
+/*fonts*/
+@font-face {
+    font-family: 'archisticobold';
+    src: url('Archistico_Bold-webfont.eot');
+    src: url('Archistico_Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Archistico_Bold-webfont.woff') format('woff'),
+         url('Archistico_Bold-webfont.ttf') format('truetype'),
+         url('Archistico_Bold-webfont.svg#archisticobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
 		
 /*container*/
 #outerWrapper {width: 100%;
 			   margin: 0 auto 0 auto;
 			   background-color: #2C6871;
-			   border: 1px solid black; /*dev border*/
 			   } 
 
 /*header*/
 header	{background-color: #B84F46; /*red*/
 		margin: 0 6% 0 6%;} 
 
-#mainLogo	{color: #2C6871;
-			 font-size: 2em;
+#mainLogo	{color: #000000;
+			 font-size: 3em;
+			 font-family: 'archisticobold', Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
 			 }
 /*nav*/
 nav		{background-color: #B87D46; /*brown orange*/
 		 text-align: center;}
 
+#loginBox {float: right;
+			}
+		 
 /*main content*/			   
 main {display: block;
 	 width: 100%;
 	 margin: 0 auto 0 auto;
-	 border: 1px solid black; /*dev border*/
-	 background-color: #368D45;} /*lightest green*/
+	 height: 100%;     /* full height of the content box */
+     min-height: 30em; /* Will be AT LEAST 30em tall */
+	 
+	 background-color: #90CC9A;} /*alternate light green*/
 
-h1, h2 {text-align: center;}
+h1, h2 {text-align: center;
+		}
 
-img {display: block;
-	}
-#zengarden {margin: 0 auto 0 auto;}
+
+#zengarden {margin: 0 auto 0 auto;
+			display: block;}
 
 section	{text-align: justify;
 		 padding: 0 2% 0 2%;
 		}
-#welcomeMsg {
-		width: 80%;
-		border: 1px solid black; /*dev border*/
-		margin: 1% auto 1% auto;
+#welcomeMsg {float: left;
+		width: 70%;
 		background-color: #FFFFFF;
+		margin: 10px 10px 10px 10px;
 			}
+
+#zstones { margin: 10px 10px 10px 10px;}
+
+#accessPanel	{
 			
+			width: 50%;
+			border: 1px solid black; /*dev*/
+			background-color: white;
+			margin: 20px 0 20px 10px;}	
 	
 /*footer*/
-footer			{padding: 10px 0 10px 0;
+footer			{	clear: both;
+					padding: 10px 0 10px 0;
 					background-color: #B84F46; /*red*/
 					margin: 0 6% 0 6%;} 
 .footerCreated	{text-align: center;
