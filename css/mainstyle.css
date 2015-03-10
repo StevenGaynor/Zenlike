@@ -46,9 +46,10 @@ header	{background-color: #B84F46; /*red*/
 			 }
 /*nav*/
 nav		{background-color: #B87D46; /*brown orange*/
+		 color: #1218B2;
 		 text-align: center;
 		 margin: 10px 0 10px 0;
-		 padding: 4px 0 4px 0;}
+		 padding: 5px 5px 5px 5px;}
 
 #loginBox {float: right;
 		/*temp styling*/
@@ -159,6 +160,7 @@ footer			{	clear: both;
 					background-color: #B84F46; /*red*/
 					margin: 0 6% 0 6%;} 
 .footerCreated	{text-align: center;
+				
 				  }
 .footerNav		{color: #FFFFFF;
 				background-color: #000000;}
