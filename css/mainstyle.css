@@ -122,19 +122,37 @@ section	{text-align: justify;
 #zenlikeHubContainer	{background-color: white;
 						margin: 0 auto 0 auto;}
 			
-table		{width: 40%;
-			margin: 50px auto 50px auto;
-			text-align: right;
-			border: 2px solid rgb(73,155,234);
-			 }
-caption		{line-height: 2em;
-			font-weight: 700;
-			margin: 0 auto;}
-th			{text-align: right;
-			padding: 3px 10px 3px 0;}
-			
-td			{border: 1px solid rgb(73,155,234);}
-	
+
+table	{margin: 100px auto 0 auto;
+		 text-align: right;
+		 border-collapse: collapse;
+		 border: 1px solid #368D45;}
+
+th		{width: 150px;
+		text-align: right;
+		padding: 3px 10px 3px 0;
+		color: #FFFFFF;
+		background: #368D45;
+		background: -webkit-linear-gradient(top, #368D45 0%, #5FAD6C 30%, #368D45 100%);
+		background: -o-linear-gradient(top, #368D45 0%, #5FAD6C 30%, #368D45 100%);
+		background: -ms-linear-gradient(top, #368D45 0%, #5FAD6C 30%, #368D45 100%);
+		background: linear-gradient(to bottom, #368D45 0%, #5FAD6C 30%, #368D45 100%);
+		}
+
+tr	{
+	border: 1px solid #368D45;
+	line-height: 1.5em;
+	}		
+
+td	{padding: 0 10px 0 0;}
+
+.tdA	{
+		background-color: #FFD8B4;
+		}
+
+.tdB	{
+		background-color: #B6DBBC;
+		}
 /*footer*/
 footer			{	clear: both;
 					padding: 10px 0 10px 0;
