@@ -154,11 +154,41 @@ td	{padding: 0 10px 0 0;}
 .tdB	{
 		background-color: #B6DBBC;
 		}
+		
+/*Contact Form*/
+#contactMain	{
+				padding: 10px 0 10px 0;}
+#contactFormDiv	{
+				width: 80%;
+				background-color: #FFD8B4;
+				margin: 10px auto 10px auto;
+				-moz-border-radius: 20px;
+				-webkit-border-radius: 20px;
+				border-radius: 20px;
+					}
+#contactForm 	{
+				background-color: white;
+				font-size: 1.2em;
+				width: 50%;
+				margin: 20px auto 0 auto;
+				padding:  10px;
+				border: 2px solid rgb(100,100,100);
+				}
+label			{
+			display: inline-block;
+			text-align: right;
+			width: 30%;
+			}
+input			{display: inline-block;
+			width: 60%;}
+textarea	{color: gray;}
+.formnote	{font-size: 10pt;
+			line-height: 1em;}
 /*footer*/
 footer			{	clear: both;
 					padding: 10px 0 10px 0;
 					background-color: #B84F46; /*red*/
-					margin: 0 6% 0 6%;} 
+					margin: 10px 6% 0 6%;} 
 .footerCreated	{text-align: center;
 				
 				  }
