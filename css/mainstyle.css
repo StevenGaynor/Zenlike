@@ -44,22 +44,37 @@ header	{background-color: #B84F46; /*red*/
 			 font-size: 3em;
 			 font-family: 'archisticobold', Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
 			 }
-/*nav*/
-nav		{background-color: #B87D46; /*brown orange*/
-		 color: #1218B2;
-		 text-align: center;
-		 margin: 10px 0 10px 0;
-		 padding: 5px 5px 5px 5px;}
+/*top main nav*/
+#topNav 	{    background-color: #B87D46; /*brown orange*/
+			 margin: 10px 0 10px 0;
+			 padding: 5px 5px 5px 5px;
+			 text-align: center;}
 
-#loginBox {float: right;
-		/*temp styling*/
-		color: white;
-		background-color: black;
-		margin: 0 5px 0 5px;
-		padding: 0 5px 0 5px;
-		font-weight: bold;
-			}
-		 
+#topNav ul li	{
+			display:inline-block;
+			width: 15%;
+			list-style-type: none;
+			}	
+			
+#topNav ul li a 	{
+				text-decoration: none;
+				display: inline-block;
+				font-weight: 700;
+				font-size: 1.2em;
+				width: 100%;
+				}
+
+#topNav ul		{
+				padding: 0;
+				margin: 0;
+				}
+
+#topNav ul li a:link {color: #2C6871;}
+
+#topNav ul li a:visited {color: #2C6871;}
+				
+
+
 /*main content*/			   
 main {	display: block;
 	 width: 100%;
@@ -120,7 +135,7 @@ section	{text-align: justify;
 								}				
 
 /*zenlike application*/
-#zenlikeHubContainer	{background-color: white;
+#zenlikeHubContainer	{
 						margin: 0 auto 0 auto;}
 			
 
@@ -181,7 +196,7 @@ label			{
 			}
 input			{display: inline-block;
 			width: 60%;}
-textarea	{color: gray;}
+
 .formnote	{font-size: 10pt;
 			line-height: 1em;}
 /*footer*/
@@ -189,9 +204,17 @@ footer			{	clear: both;
 					padding: 10px 0 10px 0;
 					background-color: #B84F46; /*red*/
 					margin: 10px 6% 0 6%;} 
-.footerCreated	{text-align: center;
+.createdBy	{text-align: center;
 				
 				  }
-.footerNav		{color: #FFFFFF;
-				background-color: #000000;}
+#footerNav		{color: #FFFFFF;
+				background-color: #000000;
+				 text-align: center;
+				  margin: 10px 0 10px 0;
+				  padding: 5px 5px 5px 5px;}
+
+#footerNav a  {text-decoration: none}
+
+#footerNav a:link {color: #FFFFFF;}
+#footerNav a:visited {color: #FFFFFF;}
 
