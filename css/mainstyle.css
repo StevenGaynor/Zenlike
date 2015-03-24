@@ -126,7 +126,7 @@ section	{text-align: justify;
 				display: inline-block;
 				margin: 10px 10px 10px 10px;
 				position: relative;
-				left: 77px;
+				left: 0px;
 				}		
 
 #zenlikeHubPortal	{
@@ -217,4 +217,110 @@ footer			{	clear: both;
 
 #footerNav a:link {color: #FFFFFF;}
 #footerNav a:visited {color: #FFFFFF;}
+
+/*Responsive Site*/
+
+/*tablets*/
+@media only screen and (max-width: 1100px) {
+			main {min-height: 1200px;}
+			
+			#homeContent	{
+				float: center;
+				margin: 0 auto 0 auto;
+				display: block;
+				width: 90%;
+					}
+			#welcomeMsg {
+					width: 95%;
+						}
+
+			#zstones { 
+				clear: right;
+				margin: 0 auto 0 auto;
+			    	}
+
+			.homeSmallSection	{
+				width: 95%;
+				}
+
+			#contactArea	{
+							display: block;
+							margin: 10px 10px 10px 10px;
+							}		
+
+			#zenlikeHubPortal	{
+								display: block;
+									}				
+	
+			
+}
+
+/*mobiles*/
+@media only screen and (max-width: 620px) {
+			main {min-height: 1600px;}
+		
+			#homeContent	{
+				float: center;
+				margin: 0 auto 0 auto;
+				display: block;
+				width: 90%;
+					}
+			#welcomeMsg {
+					width: 95%;
+						}
+
+			#zstones { 
+				clear: right;
+				margin: 0 auto 0 auto;
+			    	}
+
+			.homeSmallSection	{
+				width: 95%;
+				}
+
+			#contactArea	{
+							display: block;
+							margin: 10px 10px 10px 10px;
+							}		
+
+			#zenlikeHubPortal	{
+								display: block;
+									}				
+		
+
+}
+
+@media only screen and (max-width: 320px) {
+			main {min-height: 3000px;}
+		
+			#homeContent	{
+				float: center;
+				margin: 0 auto 0 auto;
+				display: block;
+				width: 90%;
+					}
+			#welcomeMsg {
+					width: 95%;
+						}
+
+			#zstones { 
+				clear: right;
+				margin: 0 auto 0 auto;
+			    	}
+
+			.homeSmallSection	{
+				width: 95%;
+				}
+
+			#contactArea	{
+							display: block;
+							margin: 10px 10px 10px 10px;
+							}		
+
+			#zenlikeHubPortal	{
+								display: block;
+									}				
+	
+}
+
 
