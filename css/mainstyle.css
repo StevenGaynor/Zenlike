@@ -41,7 +41,7 @@ header	{background-color: #B84F46; /*red*/
 		margin: 0 6% 0 6%;} 
 
 #mainLogo	{color: #000000;
-			 font-size: 3em;
+			 font-size: 3.5em;
 			 font-family: 'archisticobold', Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
 			 }
 /*top main nav*/
@@ -222,7 +222,8 @@ footer			{	clear: both;
 
 /*tablets*/
 @media only screen and (max-width: 1100px) {
-			main {min-height: 1200px;}
+			main {min-height: 1300px;
+				padding-top: 10px;}
 			
 			#homeContent	{
 				float: center;
@@ -235,8 +236,8 @@ footer			{	clear: both;
 						}
 
 			#zstones { 
-				clear: right;
-				margin: 0 auto 0 auto;
+				float: left;
+					padding-left: 350px;
 			    	}
 
 			.homeSmallSection	{
@@ -257,7 +258,8 @@ footer			{	clear: both;
 
 /*mobiles*/
 @media only screen and (max-width: 620px) {
-			main {min-height: 1600px;}
+			main {min-height: 2000px;
+				padding-top: 10px;}
 		
 			#homeContent	{
 				float: center;
@@ -270,8 +272,8 @@ footer			{	clear: both;
 						}
 
 			#zstones { 
-				clear: right;
-				margin: 0 auto 0 auto;
+				float: left;
+					padding-left: 130px;
 			    	}
 
 			.homeSmallSection	{
@@ -291,7 +293,8 @@ footer			{	clear: both;
 }
 
 @media only screen and (max-width: 320px) {
-			main {min-height: 3000px;}
+			main {min-height: 1400px;
+				padding-top: 10px;}
 		
 			#homeContent	{
 				float: center;
@@ -303,9 +306,10 @@ footer			{	clear: both;
 					width: 95%;
 						}
 
-			#zstones { 
-				clear: right;
-				margin: 0 auto 0 auto;
+			#zstones { /*float: left;
+					padding-left: 80px;
+					visibility: hidden;*/
+					position: absolute; left: -1000px;
 			    	}
 
 			.homeSmallSection	{
@@ -319,7 +323,8 @@ footer			{	clear: both;
 
 			#zenlikeHubPortal	{
 								display: block;
-									}				
+									}
+			
 	
 }
 
