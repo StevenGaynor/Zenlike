@@ -69,11 +69,9 @@ header	{background-color: #B84F46; /*red*/
 				margin: 0;
 				}
 
-#topNav ul li a:link {color: #2C6871;}
+#topNav ul li a:link {color: black;}
 
-#topNav ul li a:visited {color: #2C6871;}
-				
-
+#topNav ul li a:visited {color: black;}
 
 /*main content*/			   
 main {	display: block;
@@ -139,7 +137,7 @@ section	{text-align: justify;
 						margin: 0 auto 0 auto;}
 			
 
-table	{margin: 100px auto 0 auto;
+table	{margin: 0 auto 0 auto;
 		 text-align: right;
 		 border-collapse: collapse;
 		 border: 1px solid #368D45;}
@@ -226,7 +224,6 @@ footer			{	clear: both;
 				padding-top: 10px;}
 			
 			#homeContent	{
-				float: center;
 				margin: 0 auto 0 auto;
 				display: block;
 				width: 90%;
@@ -251,7 +248,9 @@ footer			{	clear: both;
 
 			#zenlikeHubPortal	{
 								display: block;
-									}				
+									}	
+			
+		
 	
 			
 }
@@ -262,7 +261,6 @@ footer			{	clear: both;
 				padding-top: 10px;}
 		
 			#homeContent	{
-				float: center;
 				margin: 0 auto 0 auto;
 				display: block;
 				width: 90%;
@@ -287,7 +285,20 @@ footer			{	clear: both;
 
 			#zenlikeHubPortal	{
 								display: block;
-									}				
+									}	
+
+				#topNav ul li {display:block;
+						margin: 0 auto;
+						width: 90%;
+						background-color: #E2AC7B;
+						margin-top: 2px;
+						margin-bottom: 2px;
+						padding-top: 1px;
+						padding-bottom: 1px;
+						-webkit-border-radius: 10px;
+						-moz-border-radius: 10px;
+						border-radius: 10px;
+						}
 		
 
 }
@@ -297,7 +308,6 @@ footer			{	clear: both;
 				padding-top: 10px;}
 		
 			#homeContent	{
-				float: center;
 				margin: 0 auto 0 auto;
 				display: block;
 				width: 90%;
