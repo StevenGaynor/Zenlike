@@ -90,6 +90,7 @@
 						<label>
 							<span>&nbsp;</span> 
 							<input type="button" class="button" value="Save"> 
+							<input type="submit" value="Submit">
 						</label>
 					</form>
 				
