@@ -167,8 +167,8 @@ section	{text-align: justify;
 .loginRegisterBox ul li a:visited {color: white;}
 
 .loginRegisterBox ul li a:hover {background-color: #044B10;}
-					
-					
+
+				
 /*------zenlike application---------*/
 
 
@@ -343,7 +343,6 @@ td:nth-of-type(8) {
 .smart-green select {
     background: url('down-arrow.png') no-repeat right, -moz-linear-gradient(top, #FBFBFB 0%, #E9E9E9 100%);
     background: url('down-arrow.png') no-repeat right, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FBFBFB), color-stop(100%,#E9E9E9));
-   appearance:none;
     -webkit-appearance:none; 
    -moz-appearance: none;
     text-indent: 0.01px;
@@ -385,12 +384,12 @@ td:nth-of-type(8) {
 				padding:  10px;
 				border: 2px solid rgb(100,100,100);
 				}
-label			{
+#contactForm label			{
 			display: inline-block;
 			text-align: right;
 			width: 30%;
 			}
-input			{display: inline-block;
+#contactForm input			{display: inline-block;
 			width: 60%;}
 
 .formnote	{font-size: 10pt;
@@ -423,17 +422,19 @@ footer			{	clear: both;
     max-width: 500px;
     background: #F7F7F7;
     padding: 25px 15px 25px 10px;
-    font: 12px Georgia, "Times New Roman", Times, serif;
     color: #888;
     text-shadow: 1px 1px 1px #FFF;
     border:1px solid #E4E4E4;
+	border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
 }
 .basic-grey h1 {
     font-size: 25px;
     padding: 0px 0px 10px 40px;
     display: block;
     border-bottom:1px solid #E4E4E4;
-    margin: -10px -15px 30px -10px;;
+    margin: -10px -15px 30px -10px;
     color: #888;
 }
 .basic-grey h1>span {
@@ -473,9 +474,8 @@ footer			{	clear: both;
 }
 .basic-grey select {
     background: #FFF url('down-arrow.png') no-repeat right;
-    background: #FFF url('down-arrow.png') no-repeat right);
-    appearance:none;
-    -webkit-appearance:none; 
+    background: #FFF url('down-arrow.png') no-repeat right;
+	-webkit-appearance:none; 
     -moz-appearance: none;
     text-indent: 0.01px;
     text-overflow: '';
@@ -499,6 +499,16 @@ footer			{	clear: both;
 .basic-grey .button:hover {
     background: #CF7A7A
 }
+
+#err_msg { margin: 0 auto;
+			background-color: #368D45;
+			font-weight: bold;
+			text-align: center;
+			color: white;
+			max-width: 500px; 
+			border-radius: 5px;
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;}
 
 /*Responsive Site*/
 
@@ -586,6 +596,7 @@ footer			{	clear: both;
 						-moz-border-radius: 10px;
 						border-radius: 10px;
 						}
+				.loginRegisterBox ul li	{width:200px;}
 		
 
 }
