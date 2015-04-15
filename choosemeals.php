@@ -89,8 +89,7 @@
 						</label>
 						<label>
 							<span>&nbsp;</span> 
-							<input type="button" class="button" value="Save"> 
-							<input type="submit" value="Submit">
+							<input type="submit" class="button" value="Save"> 
 						</label>
 					</form>
 				
