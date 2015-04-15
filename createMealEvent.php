@@ -33,4 +33,4 @@ if ($conn->multi_query($sql) === TRUE) {
 
 $conn->close();
 ?>
-<a href="myhub.html">MyHub</a>
+<a href="myhub.php">MyHub</a>

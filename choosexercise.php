@@ -26,7 +26,7 @@
 						<li><a href="index.html" tabindex="1">Home</a></li> 
 						<li><a href="objectives.html" tabindex="2">What We Do</a></li>
 						<li><a href="guide.html" tabindex="3">Using Zenlike</a></li>
-						<li><a href="myhub.html" tabindex="4">MyHub</a></li>
+						<li><a href="myhub.php" tabindex="4">MyHub</a></li>
 					</ul>
 			</nav>
 									

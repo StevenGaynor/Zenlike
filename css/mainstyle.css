@@ -135,7 +135,41 @@ section	{text-align: justify;
 				margin: 10px 10px 10px 10px;
 								}				
 
-/*zenlike application*/
+
+.loginRegisterBox 	{   
+			 	 text-align: center;
+				 }
+
+.loginRegisterBox ul li	{
+			background-color: #368D45;
+			list-style-type: none;
+			width: 300px;
+			margin: 5px auto 5px auto;
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+			border-radius: 5px;
+			}	
+			
+.loginRegisterBox ul li a 	{
+				display: block;
+				text-decoration: none;
+				font-weight: 700;
+				font-size: 1.4em;
+					}
+
+.loginRegisterBox ul		{
+				padding: 0;
+				margin: 0;
+				}
+
+.loginRegisterBox ul li a:link {color: white;}
+
+.loginRegisterBox ul li a:visited {color: white;}
+
+.loginRegisterBox ul li a:hover {background-color: #044B10;}
+					
+					
+/*------zenlike application---------*/
 
 
 table	{margin: 0 auto 0 auto;
