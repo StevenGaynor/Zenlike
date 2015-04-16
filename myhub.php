@@ -10,9 +10,7 @@ include('includes/header.html');
   echo  "<main>
 			<section id='zenlikeHubContainer'>
 				<h2>MyHub</h2>
-					<p id='loggedInMsg'>Welcome <b><u>{$_SESSION['first_name']}&nbsp;{$_SESSION['surname']}</u></b></p>";
-					
-					echo "<p id='logoutButton'><a href='logout.php'>Logout</a></p>";
+					<p id='loggedInMsg'>Welcome <b><u>{$_SESSION['first_name']}&nbsp;{$_SESSION['surname']}</u></b><span id='logoutButton'><a href='logout.php'>|&nbsp;Logout</a></span></p>";
 				
 					echo "	<section id ='zenlikeCalendar'>
 						<h3>Weekly Planner</h3>

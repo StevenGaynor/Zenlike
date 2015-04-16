@@ -173,7 +173,25 @@ section	{text-align: justify;
 
 				
 /*------zenlike application---------*/
+#loggedInMsg {color: white;
+			float: right;
+			padding: 5px 5px 5px 5px;
+			background-color: grey;
+			font-size: 16pt;
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+			border-radius: 5px;}
 
+#logoutButton a {text-decoration: none;}
+#logoutButton a:link {color: white;}
+#logoutButton a:visited {color: white;}
+#logoutButton a:hover {background-color: #ACACAC;
+						border: 1px dotted black;
+						-webkit-border-radius: 5px;
+						-moz-border-radius: 5px;
+						border-radius: 5px;}
+				
+				
 
 table	{margin: 0 auto 0 auto;
 		 text-align: right;
