@@ -10,7 +10,7 @@ function load($page='login.php')
 	exit();
 }
 
-function validate($dbc,$email='', $pwd='')
+function validate($dbc, $email, $pass)
 {
 	$errors=array();
 	if(empty($email))
@@ -18,10 +18,10 @@ function validate($dbc,$email='', $pwd='')
 	else
 	{$e=mysqli_real_escape_string($dbc,trim($email));}
 	
-	if(empty($pwd))
+	if(empty($pass))
 	{$errors[]='Enter your password.';}
 	else
-	{$p=mysqli_real_escape_string($dbc,trim($pwd));}
+	{$p=mysqli_real_escape_string($dbc,trim($pass));}
 
 	if(empty($errors))
 	{
@@ -29,7 +29,7 @@ function validate($dbc,$email='', $pwd='')
 			FROM persons
 			WHERE email = '$e'
 			AND pass = SHA1('$p')";
-		$r=mysqli_quey($dbc,$q);
+		$r=mysqli_query($dbc,$q);
 		
 		if(mysqli_num_rows($r) == 1)
 		{
