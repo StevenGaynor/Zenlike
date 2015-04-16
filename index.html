@@ -10,9 +10,7 @@
 		<link rel="stylesheet" type="text/css" href="css/print.css" media="print">
 		<meta name="viewport" content="width=device-width,initial-scale=1">
 		
-	
-	    <!--responsive menu-->
-		
+		<script type="text/javascript" src="js/mainscript.js"></script>
 	</head>
 	
 	<body>
