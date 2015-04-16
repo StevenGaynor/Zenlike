@@ -119,11 +119,11 @@
 							</label>
 							<label>
 								<span>Password :</span>
-								<input id="pass1" type="password" name="pass1" value="<?php if(isset($_POST['pass1'])) echo $_POST['pass1'];?>">
+								<input id="pass1" type="password" name="pass1">
 							</label>
 							<label>
 								<span>Confirm Password :</span>
-								<input id="pass2" type="password" name="pass2" value="<?php if(isset($_POST['pass2'])) echo $_POST['pass2'];?>">
+								<input id="pass2" type="password" name="pass2">
 							</label>
 							<label>
 								<span>&nbsp;</span> 

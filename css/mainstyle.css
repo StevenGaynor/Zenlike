@@ -490,7 +490,7 @@ footer			{	clear: both;
     height:100px;
 }
 .basic-grey .button {
-    background: #E27575;
+    background: #B84F46;
     border: none;
     padding: 10px 25px 10px 25px;
     color: #FFF;
@@ -500,7 +500,7 @@ footer			{	clear: both;
     cursor: pointer;
 }
 .basic-grey .button:hover {
-    background: #CF7A7A
+    background: #8F2820;
 }
 
 #err_msg { margin: 0 auto;
