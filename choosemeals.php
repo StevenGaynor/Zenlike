@@ -65,7 +65,7 @@
 				<form class = "smart-green" action="createMealEvent.php" method="post">
 						<h1>Create your meal event here<span>Choose a meal of your choice from above and when is best to go eat.</span></h1>
 						
-						<label><span>Enter meal number: </span><input id="meal_ID" type="number" name="meal_ID"></label>
+						<label><span>Enter meal number: </span><input id="meal_ID" type="number" min="1" max="6" name="meal_ID"></label>
 						<label><span>Enter Day: </span>
 							<select name="mealevent_day">
 								<option value="2015-04-05">Sunday</option>

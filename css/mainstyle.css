@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/*  border: 1px solid black; */
+
 /*body*/
 body 	{font-family: 'robotolight', Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
 		 color: #000000;
@@ -145,9 +145,9 @@ section	{text-align: justify;
 			list-style-type: none;
 			width: 300px;
 			margin: 5px auto 5px auto;
-			-webkit-border-radius: 5px;
-			-moz-border-radius: 5px;
-			border-radius: 5px;
+			-webkit-border-radius: 10px;
+			-moz-border-radius: 10px;
+			border-radius: 10px;
 			}	
 			
 .loginRegisterBox ul li a 	{
@@ -166,7 +166,10 @@ section	{text-align: justify;
 
 .loginRegisterBox ul li a:visited {color: white;}
 
-.loginRegisterBox ul li a:hover {background-color: #044B10;}
+.loginRegisterBox ul li a:hover {background-color: #044B10;
+								-webkit-border-radius: 10px;
+			-moz-border-radius: 10px;
+			border-radius: 10px;}
 
 				
 /*------zenlike application---------*/
@@ -515,12 +518,14 @@ footer			{	clear: both;
 /*tablets*/
 @media only screen and (max-width: 1100px) {
 			main {min-height: 1300px;
+				
 				}
 			
 			#homeContent	{
-				float: none;
+				clear: both;
 				text-align: center;
 				display: block;
+				margin: 0 auto;
 				width: 90%;
 					}
 			#welcomeMsg {
@@ -556,35 +561,15 @@ footer			{	clear: both;
 			main {min-height: 1500px;
 				}
 		
-			#homeContent	{
-				float: none;
-				text-align: center;
-				display: block;
-				width: 90%;
-					}
-			#welcomeMsg {
-					width: 95%;
-						}
+			
 
 			#zstones { 
 				float: none;
 		        padding-left: 20%;
 			    	}
 
-			.homeSmallSection	{
-				width: 95%;
-				}
-
-			#contactArea	{
-							display: block;
-							margin: 10px 10px 10px 10px;
-							}		
-
-			#zenlikeHubPortal	{
-								display: block;
-									}	
-
-				#topNav ul li {display:block;
+		
+			#topNav ul li {display:block;
 						margin: 0 auto;
 						width: 90%;
 						background-color: #E2AC7B;
@@ -596,7 +581,7 @@ footer			{	clear: both;
 						-moz-border-radius: 10px;
 						border-radius: 10px;
 						}
-				.loginRegisterBox ul li	{width:200px;}
+		     .loginRegisterBox ul li	{width:200px;}
 		
 
 }
@@ -604,32 +589,10 @@ footer			{	clear: both;
 @media only screen and (max-width: 320px) {
 			main {min-height: 1400px;
 				}
+			#mainLogo {font-size:3em;}
 		
-			#homeContent	{
-				float: none;
-				display: block;
-				width: 90%;
-					}
-			#welcomeMsg {
-					width: 95%;
-						}
-
 			#zstones { position: absolute; left: -1000px;
 			    	}
-
-			.homeSmallSection	{
-				width: 95%;
-				}
-
-			#contactArea	{
-							display: block;
-							margin: 10px 10px 10px 10px;
-							}		
-
-			#zenlikeHubPortal	{
-								display: block;
-									}
-			
 	
 }
 
