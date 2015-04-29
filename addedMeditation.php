@@ -15,7 +15,7 @@ if(isset($_GET['id'])) $med_ID = $_GET['id'];
 			<section>
 				<form class = 'smart-green' action='createMeditEvent.php' method='post'>
 						<h1>Create your relaxation event here<span>Choose when is best to chill out.</span></h1>
-						<label><span>Relaxtion number: </span><input id='med_ID' type='number' name='med_ID' value="<?php echo htmlspecialchars($med_ID);?>" readonly></label>
+						<label><span>Relaxation number: </span><input id='med_ID' type='number' name='med_ID' value="<?php echo htmlspecialchars($med_ID);?>" readonly></label>
 						<label><span>Enter Day: </span>
 							<select name='medEventDay'>
 								<option value='2015-04-05'>Sunday</option>

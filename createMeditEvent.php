@@ -10,7 +10,7 @@ $page_title = 'Create Meditation Event | Zenlike';
 include ('includes/header.html');
 require('../connect_db.php');
 
-$per_ID = $_SESSION['per_ID']; //<----Can this be done????
+$per_ID = $_SESSION['per_ID'];
 
 if($_SERVER['REQUEST_METHOD'] == 'POST')
 {
@@ -45,6 +45,6 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
 		mysqli_close($dbc);
 		include('includes/footer.html');
 		exit();
-	}
+	} else { echo'<main><section><h2>Error</h2><p>Database connectivity issue</p></section></main>';}
 }
 ?>
