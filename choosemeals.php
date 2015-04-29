@@ -35,42 +35,7 @@ require('../connect_db.php');
 							}
 							mysqli_close($dbc);
 						}else {echo'<p>No meals at present</p>';}
-						echo"
-											
-				</section>";
-				echo "
-				<form class = 'smart-green' action='createMealEvent.php' method='post'>
-						<h1>Create your meal event here<span>Choose a meal of your choice from above and when is best to go eat.</span></h1>
-						
-						<label><span>Enter meal number: </span><input id='meal_ID' type='number' min='1' max='6' name='meal_ID'></label>
-						<label><span>Enter Day: </span>
-							<select name='mealevent_day'>
-								<option value='2015-04-05'>Sunday</option>
-								<option value='2015-04-06'>Monday</option>
-								<option value='2015-04-07'>Tuesday</option>
-								<option value='2015-04-08'>Wednesday</option>
-								<option value='2015-04-09'>Thursday</option>
-								<option value='2015-04-10'>Friday</option>
-								<option value='2015-04-11'>Saturday</option>
-							</select>
-						</label>
-						<label><span>Enter Time: </span>
-							<select name='mealevent_time'>
-								<option value='06:00:00'>6am - 9am</option>
-								<option value='09:00:00'>9am - 12pm</option>
-								<option value='12:00:00'>12pm - 3pm</option>
-								<option value='15:00:00'>3pm - 6pm</option>
-								<option value='18:00:00'>6pm - 9pm</option>
-								<option value='21:00:00'>9pm - 12am</option>
-							</select>
-						</label>
-						<label>
-							<span>&nbsp;</span> 
-							<input type='submit' class='button' value='Save'> 
-						</label>
-					</form>
-				
-				
-			</main>";
+						echo"</section>";
+				echo "</main>";
 include('includes/footer.html');
 		
