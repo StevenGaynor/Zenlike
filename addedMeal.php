@@ -9,7 +9,7 @@ $page_title = 'Meal Addition';
 include('includes/header.html');
 //assign the passed meal ID a variable
 if(isset($_GET['id'])) $meal_ID = $_GET['id'];
-//require('../connect_db.php');
+
 ?>
 <main>
 			<section>
