@@ -24,7 +24,7 @@ echo  "<main>
 							<tbody>
 								<tr><td>6am - 9am</td><td><!--SUNDAY 6:00-->
 														
-														
+														<!--meals-->
 														<?php 
 														
 														$q = "SELECT meals.meal_name, mealEvents.mealevent_day, mealEvents.mealevent_time, mealEvents.per_ID
@@ -45,6 +45,8 @@ echo  "<main>
 														}else {echo'&nbsp;';}
 														
 														?>
+														<!--meditations-->
+														<!--exercises-->
 														
 								
 								
