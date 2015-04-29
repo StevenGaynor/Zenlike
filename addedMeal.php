@@ -10,11 +10,12 @@ include('includes/header.html');
 //assign the passed meal ID a variable
 if(isset($_GET['id'])) $meal_ID = $_GET['id'];
 //require('../connect_db.php');
-echo "<main>
+?>
+<main>
 			<section>
 				<form class = 'smart-green' action='createMealEvent.php' method='post'>
 						<h1>Create your meal event here<span>Choose when is best to go eat your choice of meal.</span></h1>
-						<label><span>Meal number: </span><input id='meal_ID' type='number' name='meal_ID' value='$meal_ID;' readonly></label>
+						<label><span>Meal number: </span><input id='meal_ID' type='number' name='meal_ID' value="<?php echo htmlspecialchars($meal_ID);?>" readonly></label>
 						<label><span>Enter Day: </span>
 							<select name='mealevent_day'>
 								<option value='2015-04-05'>Sunday</option>
@@ -42,6 +43,7 @@ echo "<main>
 						</label>
 					</form>
 				</section>				
-			</main>";
+			</main>
+<?php
 include ('includes/footer.html');
 ?>
