@@ -61,21 +61,41 @@ echo  "<main>
 															{
 															echo '<p class ="meditEvent"><strong>'.$row['med_name'].
 															'</strong></p>';
-															}mysqli_close($dbc);
+															}
 														}else {echo'&nbsp;';}
 														
 														?>
 														<!--exercises-->
+														<?php
+														
+														$q = "SELECT exercises.exercise_name, exerciseEvents.exerciseEventDay, exerciseEvents.exerciseEventTime, exerciseEvents.per_ID
+															  FROM exercises
+															  INNER JOIN exerciseEvents
+															  ON exercises.exercise_ID = exerciseEvents.exercise_ID
+															  WHERE exerciseEvents.per_ID = '$per_ID'
+															  AND exerciseEvents.exerciseEventDay = '2015-04-05'
+															  AND exerciseEvents.exerciseEventTime = '06:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="exerciseEvent"><strong>'.$row['exercise_name'].
+															'</strong></p>';
+															}
+														}else {echo'&nbsp;';}
+														
+														?>
 														
 								
 								
 								
-								</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
-								<tr><td>9am - 12pm</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
-								<tr><td>12pm - 3pm</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
-								<tr><td>3pm - 6pm</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
-								<tr><td>6pm - 9pm</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
-								<tr><td>9pm -12am</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+								</td><td><!--Mon6-9--></td><td><!--Tues6-9--></td><td><!--Wed6-9--></td><td><!--Thurs6-9--></td><td><!--Fri6-9--></td><td><!--Sat6-9--></td></tr>
+								<tr><td>9am - 12pm</td><td><!--Sun9-12--></td><td><!--Mon9-12--></td><td><!--Tues9-12--></td><td><!--Wed9-12--></td><td><!--Thurs9-12--></td><td><!--Fri9-12--></td><td><!--Sat9-12--></td></tr>
+								<tr><td>12pm - 3pm</td><td><!--Sun12-3--></td><td><!--Mon12-3--></td><td><!--Tues12-3--></td><td><!--Wed12-3--></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+								<tr><td>3pm - 6pm</td><td><!--Sun3-6--></td><td><!--Mon3-6--></td><td><!--Tues3-6--></td><td><!--Wed3-6--></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+								<tr><td>6pm - 9pm</td><td><!--Sun6p-9--></td><td><!--Mon6p-9--></td><td><!--Tues6p-9--></td><td><!--Wed6p-9--></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+								<tr><td>9pm -12am</td><td><!--Sun9p-12--></td><td><!--Mon9p-12--></td><td><!--Tues9p-12--></td><td><!--Wed9p-12--></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
 							</tbody>
 						</table> 
 						
@@ -89,6 +109,7 @@ echo  "<main>
 				</section>
 			</main>
 <?php
+	mysqli_close($dbc);
 	include ('includes/footer.html');
 ?>
 	
