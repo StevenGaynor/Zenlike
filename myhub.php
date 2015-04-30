@@ -39,13 +39,32 @@ echo  "<main>
 														{
 															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
 															{
-															echo '<p><strong>'.$row['meal_name'].
+															echo '<p class ="mealEvent"><strong>'.$row['meal_name'].
+															'</strong></p>';
+															}//mysqli_close($dbc);
+														}else {echo'&nbsp;';}
+														
+														?>
+														<?php
+														
+														$q = "SELECT meditations.med_name, meditEvents.medEventDay, meditEvents.medEventTime, meditEvents.per_ID
+															  FROM meditations
+															  INNER JOIN meditEvents
+															  ON meditations.med_ID = meditEvents.med_ID
+															  WHERE meditEvents.per_ID = '$per_ID'
+															  AND meditEvents.medEventDay = '2015-04-05'
+															  AND meditEvents.medEventTime = '06:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="meditEvent"><strong>'.$row['med_name'].
 															'</strong></p>';
 															}mysqli_close($dbc);
 														}else {echo'&nbsp;';}
 														
 														?>
-														<!--meditations-->
 														<!--exercises-->
 														
 								
