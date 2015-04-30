@@ -12,7 +12,7 @@ $per_ID = $_SESSION['per_ID'];
 echo  "<main>
 			<section id='zenlikeHubContainer'>
 				<h2>MyHub</h2>
-					<p id='loggedInMsg'>Welcome <b><u>{$_SESSION['first_name']}&nbsp;{$_SESSION['surname']}</u></b>&nbsp;|&nbsp;<a id='myHubButton' href='myhub.php'>MyHub</a>&nbsp;|&nbsp;<span id='logoutButton'><a href='logout.php'>Logout</a></span></p>";
+					<p id='loggedInMsg'>Welcome <b><u>{$_SESSION['first_name']}&nbsp;{$_SESSION['surname']}</u></b>&nbsp;|&nbsp;<span id='myHubButton'><a href='myhub.php'>MyHub</a></span>&nbsp;|&nbsp;<span id='logoutButton'><a href='logout.php'>Logout</a></span></p>";
 ?>
 				
 					<section id ='zenlikeCalendar'>
@@ -92,10 +92,10 @@ echo  "<main>
 								
 								</td><td><!--Mon6-9--></td><td><!--Tues6-9--></td><td><!--Wed6-9--></td><td><!--Thurs6-9--></td><td><!--Fri6-9--></td><td><!--Sat6-9--></td></tr>
 								<tr><td>9am - 12pm</td><td><!--Sun9-12--></td><td><!--Mon9-12--></td><td><!--Tues9-12--></td><td><!--Wed9-12--></td><td><!--Thurs9-12--></td><td><!--Fri9-12--></td><td><!--Sat9-12--></td></tr>
-								<tr><td>12pm - 3pm</td><td><!--Sun12-3--></td><td><!--Mon12-3--></td><td><!--Tues12-3--></td><td><!--Wed12-3--></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
-								<tr><td>3pm - 6pm</td><td><!--Sun3-6--></td><td><!--Mon3-6--></td><td><!--Tues3-6--></td><td><!--Wed3-6--></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
-								<tr><td>6pm - 9pm</td><td><!--Sun6p-9--></td><td><!--Mon6p-9--></td><td><!--Tues6p-9--></td><td><!--Wed6p-9--></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
-								<tr><td>9pm -12am</td><td><!--Sun9p-12--></td><td><!--Mon9p-12--></td><td><!--Tues9p-12--></td><td><!--Wed9p-12--></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+								<tr><td>12pm - 3pm</td><td><!--Sun12-3--></td><td><!--Mon12-3--></td><td><!--Tues12-3--></td><td><!--Wed12-3--></td><td><!--Thurs12-3--></td><td><!--Fri12-3--></td><td><!--Sat12-3--></td></tr>
+								<tr><td>3pm - 6pm</td><td><!--Sun3-6--></td><td><!--Mon3-6--></td><td><!--Tues3-6--></td><td><!--Wed3-6--></td><td><!--Thurs3-6--></td><td><!--Fri3-6--></td><td><!--Sat3-6--></td></tr>
+								<tr><td>6pm - 9pm</td><td><!--Sun6p-9--></td><td><!--Mon6p-9--></td><td><!--Tues6p-9--></td><td><!--Wed6p-9--></td><td><!--Thurs6p-9--></td><td><!--Fri6p-9--></td><td><!--Sat6p-9--></td></tr>
+								<tr><td>9pm -12am</td><td><!--Sun9p-12--></td><td><!--Mon9p-12--></td><td><!--Tues9p-12--></td><td><!--Wed9p-12--></td><td><!--Thurs9p-12--></td><td><!--Fri9p-12--></td><td><!--Sat9p-12--></td></tr>
 							</tbody>
 						</table> 
 						

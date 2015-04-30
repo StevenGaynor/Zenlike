@@ -192,9 +192,10 @@ section	{text-align: justify;
 						border-radius: 5px;}
 #myHubButton {background-color: #368D45;
 				padding: 5px 5px 5px 5px;}
-#myHubButton a:link {text-decoration: none;
-					color: white;}
+#myHubButton a {text-decoration: none;}
+#myHubButton a:link {color: white;}
 #myHubButton a:visited {color: white;}
+#myHubButton a:hover {border: 1px dotted black;}
 				
 				
 
@@ -217,12 +218,13 @@ th		{width: 150px;
 
 tr	{
 	border: 1px solid #368D45;
-	line-height: 3em;
+	line-height: 2em;
 	}		
 
-td	{padding: 0 10px 0 0;
+td	{padding: 0 5px 0 5px;
 	}
 
+	
  /*#B84F46; red*/
 
 /* Zebra striping */
@@ -252,8 +254,30 @@ td:nth-of-type(7){
 td:nth-of-type(8) { 
   background: #B6DBBC; 
 }
-
-
+/*Event Indicators---TEMPORARY COLORS*/
+.mealEvent{background-color: black;
+			color: white;
+			font-size: 10pt;
+			-webkit-border-radius: 3px;
+			-moz-border-radius: 3px;
+			border-radius: 3px;
+			padding: 0 2px 0 2px;}
+			
+.exerciseEvent{background-color: blue;
+			color: white;
+			font-size: 10pt;
+			-webkit-border-radius: 3px;
+			-moz-border-radius: 3px;
+			border-radius: 3px;
+			padding: 0 2px 0 2px;}
+			
+.meditEvent{background-color: red;
+			color: white;
+			font-size: 10pt;
+			-webkit-border-radius: 3px;
+			-moz-border-radius: 3px;
+			border-radius: 3px;
+			padding: 0 2px 0 2px;}
 
 		
 			/*responsive calender*/
