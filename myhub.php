@@ -86,10 +86,6 @@ echo  "<main>
 														}else {echo'&nbsp;';}
 														
 														?>
-														
-								
-								
-								
 								</td><td><!--Mon6-9--></td><td><!--Tues6-9--></td><td><!--Wed6-9--></td><td><!--Thurs6-9--></td><td><!--Fri6-9--></td><td><!--Sat6-9--></td></tr>
 								<tr><td>9am - 12pm</td><td><!--Sun9-12--></td><td><!--Mon9-12--></td><td><!--Tues9-12--></td><td><!--Wed9-12--></td><td><!--Thurs9-12--></td><td><!--Fri9-12--></td><td><!--Sat9-12--></td></tr>
 								<tr><td>12pm - 3pm</td><td><!--Sun12-3--></td><td><!--Mon12-3--></td><td><!--Tues12-3--></td><td><!--Wed12-3--></td><td><!--Thurs12-3--></td><td><!--Fri12-3--></td><td><!--Sat12-3--></td></tr>
