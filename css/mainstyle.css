@@ -185,17 +185,13 @@ section	{text-align: justify;
 #logoutButton a {text-decoration: none;}
 #logoutButton a:link {color: white;}
 #logoutButton a:visited {color: white;}
-#logoutButton a:hover {background-color: #ACACAC;
-						border: 1px dotted black;
-						-webkit-border-radius: 5px;
-						-moz-border-radius: 5px;
-						border-radius: 5px;}
+#logoutButton a:hover {background-color: #ACACAC;}
 #myHubButton {background-color: #368D45;
 				padding: 5px 5px 5px 5px;}
 #myHubButton a {text-decoration: none;}
 #myHubButton a:link {color: white;}
 #myHubButton a:visited {color: white;}
-#myHubButton a:hover {border: 1px dotted black;}
+#myHubButton a:hover {background-color: #5FAD6D;}
 				
 				
 
