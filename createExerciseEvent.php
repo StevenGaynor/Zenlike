@@ -6,7 +6,7 @@ if(!isset($_SESSION['per_ID']))
   require('login_tools.php');
   load();
 }
-$page_title = 'Create Exercise Event | Zenlike';
+$page_title = 'Create Exercise Event';
 include ('includes/header.html');
 require('../connect_db.php');
 

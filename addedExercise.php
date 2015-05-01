@@ -14,7 +14,7 @@ if(isset($_GET['id'])) $exercise_ID = $_GET['id'];
 <main>
 			<section>
 				<form class = 'smart-green' action='createExerciseEvent.php' method='post'>
-						<h1>Create your exercise event here<span>Choose when is best to go eat your choice of meal.</span></h1>
+						<h1>Create your exercise event here<span>Choose when is best to work out.</span></h1>
 						<label><span>Exercise number: </span><input id='exercise_ID' type='number' name='exercise_ID' value="<?php echo htmlspecialchars($exercise_ID);?>" readonly></label>
 						<label><span>Enter Day: </span>
 							<select name='exerciseEventDay'>

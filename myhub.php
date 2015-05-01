@@ -4,7 +4,7 @@ session_start();
 # Redirect if not logged in.
 if ( !isset( $_SESSION[ 'per_ID' ] ) ) { require ( 'login_tools.php' ) ; load() ; }
 
-$page_title = 'Zenlike - MyHub';
+$page_title = 'MyHub';
 include('includes/header.html');
 
 require('../connect_db.php');

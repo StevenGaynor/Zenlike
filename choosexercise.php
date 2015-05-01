@@ -8,7 +8,7 @@ if(!isset($_SESSION['per_ID']))
 	load();
 }
 
-$page_title = 'Zenlike - Exercise';
+$page_title = 'Exercise';
 include ('includes/header.html');
 
 require('../connect_db.php');
