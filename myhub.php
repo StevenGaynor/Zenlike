@@ -2717,6 +2717,7 @@ echo  "<main>
 														
 														?>
 								</td></tr>
+								<tr><td><!--clear each day--></td><td>Clear</td><td>Clear</td><td>Clear</td><td>Clear</td><td>Clear</td><td>Clear</td><td>Clear</td></tr>
 							</tbody>
 						</table> 
 						
