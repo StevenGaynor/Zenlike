@@ -45,6 +45,7 @@ echo  "<main>
 														}else {echo'&nbsp;';}
 														
 														?>
+														<!--relaxation-->
 														<?php
 														
 														$q = "SELECT meditations.med_name, meditEvents.medEventDay, meditEvents.medEventTime, meditEvents.per_ID
@@ -86,12 +87,2636 @@ echo  "<main>
 														}else {echo'&nbsp;';}
 														
 														?>
-								</td><td><!--Mon6-9--></td><td><!--Tues6-9--></td><td><!--Wed6-9--></td><td><!--Thurs6-9--></td><td><!--Fri6-9--></td><td><!--Sat6-9--></td></tr>
-								<tr><td>9am - 12pm</td><td><!--Sun9-12--></td><td><!--Mon9-12--></td><td><!--Tues9-12--></td><td><!--Wed9-12--></td><td><!--Thurs9-12--></td><td><!--Fri9-12--></td><td><!--Sat9-12--></td></tr>
-								<tr><td>12pm - 3pm</td><td><!--Sun12-3--></td><td><!--Mon12-3--></td><td><!--Tues12-3--></td><td><!--Wed12-3--></td><td><!--Thurs12-3--></td><td><!--Fri12-3--></td><td><!--Sat12-3--></td></tr>
-								<tr><td>3pm - 6pm</td><td><!--Sun3-6--></td><td><!--Mon3-6--></td><td><!--Tues3-6--></td><td><!--Wed3-6--></td><td><!--Thurs3-6--></td><td><!--Fri3-6--></td><td><!--Sat3-6--></td></tr>
-								<tr><td>6pm - 9pm</td><td><!--Sun6p-9--></td><td><!--Mon6p-9--></td><td><!--Tues6p-9--></td><td><!--Wed6p-9--></td><td><!--Thurs6p-9--></td><td><!--Fri6p-9--></td><td><!--Sat6p-9--></td></tr>
-								<tr><td>9pm -12am</td><td><!--Sun9p-12--></td><td><!--Mon9p-12--></td><td><!--Tues9p-12--></td><td><!--Wed9p-12--></td><td><!--Thurs9p-12--></td><td><!--Fri9p-12--></td><td><!--Sat9p-12--></td></tr>
+								</td><td><!--Mon6-9-->
+									<!--meals-->
+														<?php 
+														
+														$q = "SELECT meals.meal_name, mealEvents.mealevent_day, mealEvents.mealevent_time, mealEvents.per_ID
+															  FROM meals
+															  INNER JOIN mealEvents
+															  ON meals.meal_ID = mealEvents.meal_ID
+															  WHERE mealEvents.per_ID = '$per_ID'
+															  AND mealEvents.mealevent_day = '2015-04-06'
+															  AND mealEvents.mealevent_time = '06:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="mealEvent"><strong>'.$row['meal_name'].
+															'</strong></p>';
+															}//mysqli_close($dbc);
+														}else {echo'&nbsp;';}
+														
+														?>
+														<!--relaxation-->
+														<?php
+														
+														$q = "SELECT meditations.med_name, meditEvents.medEventDay, meditEvents.medEventTime, meditEvents.per_ID
+															  FROM meditations
+															  INNER JOIN meditEvents
+															  ON meditations.med_ID = meditEvents.med_ID
+															  WHERE meditEvents.per_ID = '$per_ID'
+															  AND meditEvents.medEventDay = '2015-04-06'
+															  AND meditEvents.medEventTime = '06:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="meditEvent"><strong>'.$row['med_name'].
+															'</strong></p>';
+															}
+														}else {echo'&nbsp;';}
+														
+														?>
+														<!--exercises-->
+														<?php
+														
+														$q = "SELECT exercises.exercise_name, exerciseEvents.exerciseEventDay, exerciseEvents.exerciseEventTime, exerciseEvents.per_ID
+															  FROM exercises
+															  INNER JOIN exerciseEvents
+															  ON exercises.exercise_ID = exerciseEvents.exercise_ID
+															  WHERE exerciseEvents.per_ID = '$per_ID'
+															  AND exerciseEvents.exerciseEventDay = '2015-04-06'
+															  AND exerciseEvents.exerciseEventTime = '06:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="exerciseEvent"><strong>'.$row['exercise_name'].
+															'</strong></p>';
+															}
+														}else {echo'&nbsp;';}
+														
+														?>
+								</td><td><!--Tues6-9-->
+									<!--meals-->
+														<?php 
+														
+														$q = "SELECT meals.meal_name, mealEvents.mealevent_day, mealEvents.mealevent_time, mealEvents.per_ID
+															  FROM meals
+															  INNER JOIN mealEvents
+															  ON meals.meal_ID = mealEvents.meal_ID
+															  WHERE mealEvents.per_ID = '$per_ID'
+															  AND mealEvents.mealevent_day = '2015-04-07'
+															  AND mealEvents.mealevent_time = '06:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="mealEvent"><strong>'.$row['meal_name'].
+															'</strong></p>';
+															}//mysqli_close($dbc);
+														}else {echo'&nbsp;';}
+														
+														?>
+														<!--relaxation-->
+														<?php
+														
+														$q = "SELECT meditations.med_name, meditEvents.medEventDay, meditEvents.medEventTime, meditEvents.per_ID
+															  FROM meditations
+															  INNER JOIN meditEvents
+															  ON meditations.med_ID = meditEvents.med_ID
+															  WHERE meditEvents.per_ID = '$per_ID'
+															  AND meditEvents.medEventDay = '2015-04-07'
+															  AND meditEvents.medEventTime = '06:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="meditEvent"><strong>'.$row['med_name'].
+															'</strong></p>';
+															}
+														}else {echo'&nbsp;';}
+														
+														?>
+														<!--exercises-->
+														<?php
+														
+														$q = "SELECT exercises.exercise_name, exerciseEvents.exerciseEventDay, exerciseEvents.exerciseEventTime, exerciseEvents.per_ID
+															  FROM exercises
+															  INNER JOIN exerciseEvents
+															  ON exercises.exercise_ID = exerciseEvents.exercise_ID
+															  WHERE exerciseEvents.per_ID = '$per_ID'
+															  AND exerciseEvents.exerciseEventDay = '2015-04-07'
+															  AND exerciseEvents.exerciseEventTime = '06:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="exerciseEvent"><strong>'.$row['exercise_name'].
+															'</strong></p>';
+															}
+														}else {echo'&nbsp;';}
+														
+														?>
+								</td><td><!--Wed6-9-->
+									<!--meals-->
+														<?php 
+														
+														$q = "SELECT meals.meal_name, mealEvents.mealevent_day, mealEvents.mealevent_time, mealEvents.per_ID
+															  FROM meals
+															  INNER JOIN mealEvents
+															  ON meals.meal_ID = mealEvents.meal_ID
+															  WHERE mealEvents.per_ID = '$per_ID'
+															  AND mealEvents.mealevent_day = '2015-04-08'
+															  AND mealEvents.mealevent_time = '06:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="mealEvent"><strong>'.$row['meal_name'].
+															'</strong></p>';
+															}//mysqli_close($dbc);
+														}else {echo'&nbsp;';}
+														
+														?>
+														<!--relaxation-->
+														<?php
+														
+														$q = "SELECT meditations.med_name, meditEvents.medEventDay, meditEvents.medEventTime, meditEvents.per_ID
+															  FROM meditations
+															  INNER JOIN meditEvents
+															  ON meditations.med_ID = meditEvents.med_ID
+															  WHERE meditEvents.per_ID = '$per_ID'
+															  AND meditEvents.medEventDay = '2015-04-08'
+															  AND meditEvents.medEventTime = '06:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="meditEvent"><strong>'.$row['med_name'].
+															'</strong></p>';
+															}
+														}else {echo'&nbsp;';}
+														
+														?>
+														<!--exercises-->
+														<?php
+														
+														$q = "SELECT exercises.exercise_name, exerciseEvents.exerciseEventDay, exerciseEvents.exerciseEventTime, exerciseEvents.per_ID
+															  FROM exercises
+															  INNER JOIN exerciseEvents
+															  ON exercises.exercise_ID = exerciseEvents.exercise_ID
+															  WHERE exerciseEvents.per_ID = '$per_ID'
+															  AND exerciseEvents.exerciseEventDay = '2015-04-08'
+															  AND exerciseEvents.exerciseEventTime = '06:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="exerciseEvent"><strong>'.$row['exercise_name'].
+															'</strong></p>';
+															}
+														}else {echo'&nbsp;';}
+														
+														?>
+								</td><td><!--Thurs6-9-->
+									<!--meals-->
+														<?php 
+														
+														$q = "SELECT meals.meal_name, mealEvents.mealevent_day, mealEvents.mealevent_time, mealEvents.per_ID
+															  FROM meals
+															  INNER JOIN mealEvents
+															  ON meals.meal_ID = mealEvents.meal_ID
+															  WHERE mealEvents.per_ID = '$per_ID'
+															  AND mealEvents.mealevent_day = '2015-04-09'
+															  AND mealEvents.mealevent_time = '06:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="mealEvent"><strong>'.$row['meal_name'].
+															'</strong></p>';
+															}//mysqli_close($dbc);
+														}else {echo'&nbsp;';}
+														
+														?>
+														<!--relaxation-->
+														<?php
+														
+														$q = "SELECT meditations.med_name, meditEvents.medEventDay, meditEvents.medEventTime, meditEvents.per_ID
+															  FROM meditations
+															  INNER JOIN meditEvents
+															  ON meditations.med_ID = meditEvents.med_ID
+															  WHERE meditEvents.per_ID = '$per_ID'
+															  AND meditEvents.medEventDay = '2015-04-09'
+															  AND meditEvents.medEventTime = '06:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="meditEvent"><strong>'.$row['med_name'].
+															'</strong></p>';
+															}
+														}else {echo'&nbsp;';}
+														
+														?>
+														<!--exercises-->
+														<?php
+														
+														$q = "SELECT exercises.exercise_name, exerciseEvents.exerciseEventDay, exerciseEvents.exerciseEventTime, exerciseEvents.per_ID
+															  FROM exercises
+															  INNER JOIN exerciseEvents
+															  ON exercises.exercise_ID = exerciseEvents.exercise_ID
+															  WHERE exerciseEvents.per_ID = '$per_ID'
+															  AND exerciseEvents.exerciseEventDay = '2015-04-09'
+															  AND exerciseEvents.exerciseEventTime = '06:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="exerciseEvent"><strong>'.$row['exercise_name'].
+															'</strong></p>';
+															}
+														}else {echo'&nbsp;';}
+														
+														?>
+								</td><td><!--Fri6-9-->
+									<!--meals-->
+														<?php 
+														
+														$q = "SELECT meals.meal_name, mealEvents.mealevent_day, mealEvents.mealevent_time, mealEvents.per_ID
+															  FROM meals
+															  INNER JOIN mealEvents
+															  ON meals.meal_ID = mealEvents.meal_ID
+															  WHERE mealEvents.per_ID = '$per_ID'
+															  AND mealEvents.mealevent_day = '2015-04-10'
+															  AND mealEvents.mealevent_time = '06:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="mealEvent"><strong>'.$row['meal_name'].
+															'</strong></p>';
+															}//mysqli_close($dbc);
+														}else {echo'&nbsp;';}
+														
+														?>
+														<!--relaxation-->
+														<?php
+														
+														$q = "SELECT meditations.med_name, meditEvents.medEventDay, meditEvents.medEventTime, meditEvents.per_ID
+															  FROM meditations
+															  INNER JOIN meditEvents
+															  ON meditations.med_ID = meditEvents.med_ID
+															  WHERE meditEvents.per_ID = '$per_ID'
+															  AND meditEvents.medEventDay = '2015-04-10'
+															  AND meditEvents.medEventTime = '06:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="meditEvent"><strong>'.$row['med_name'].
+															'</strong></p>';
+															}
+														}else {echo'&nbsp;';}
+														
+														?>
+														<!--exercises-->
+														<?php
+														
+														$q = "SELECT exercises.exercise_name, exerciseEvents.exerciseEventDay, exerciseEvents.exerciseEventTime, exerciseEvents.per_ID
+															  FROM exercises
+															  INNER JOIN exerciseEvents
+															  ON exercises.exercise_ID = exerciseEvents.exercise_ID
+															  WHERE exerciseEvents.per_ID = '$per_ID'
+															  AND exerciseEvents.exerciseEventDay = '2015-04-10'
+															  AND exerciseEvents.exerciseEventTime = '06:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="exerciseEvent"><strong>'.$row['exercise_name'].
+															'</strong></p>';
+															}
+														}else {echo'&nbsp;';}
+														
+														?>
+								</td><td><!--Sat6-9-->
+									<!--meals-->
+														<?php 
+														
+														$q = "SELECT meals.meal_name, mealEvents.mealevent_day, mealEvents.mealevent_time, mealEvents.per_ID
+															  FROM meals
+															  INNER JOIN mealEvents
+															  ON meals.meal_ID = mealEvents.meal_ID
+															  WHERE mealEvents.per_ID = '$per_ID'
+															  AND mealEvents.mealevent_day = '2015-04-11'
+															  AND mealEvents.mealevent_time = '06:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="mealEvent"><strong>'.$row['meal_name'].
+															'</strong></p>';
+															}//mysqli_close($dbc);
+														}else {echo'&nbsp;';}
+														
+														?>
+														<!--relaxation-->
+														<?php
+														
+														$q = "SELECT meditations.med_name, meditEvents.medEventDay, meditEvents.medEventTime, meditEvents.per_ID
+															  FROM meditations
+															  INNER JOIN meditEvents
+															  ON meditations.med_ID = meditEvents.med_ID
+															  WHERE meditEvents.per_ID = '$per_ID'
+															  AND meditEvents.medEventDay = '2015-04-11'
+															  AND meditEvents.medEventTime = '06:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="meditEvent"><strong>'.$row['med_name'].
+															'</strong></p>';
+															}
+														}else {echo'&nbsp;';}
+														
+														?>
+														<!--exercises-->
+														<?php
+														
+														$q = "SELECT exercises.exercise_name, exerciseEvents.exerciseEventDay, exerciseEvents.exerciseEventTime, exerciseEvents.per_ID
+															  FROM exercises
+															  INNER JOIN exerciseEvents
+															  ON exercises.exercise_ID = exerciseEvents.exercise_ID
+															  WHERE exerciseEvents.per_ID = '$per_ID'
+															  AND exerciseEvents.exerciseEventDay = '2015-04-11'
+															  AND exerciseEvents.exerciseEventTime = '06:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="exerciseEvent"><strong>'.$row['exercise_name'].
+															'</strong></p>';
+															}
+														}else {echo'&nbsp;';}
+														
+														?>
+								</td></tr>
+								<tr><td>9am - 12pm</td><td><!--Sun9-12-->
+														<!--meals-->
+														<?php 
+														
+														$q = "SELECT meals.meal_name, mealEvents.mealevent_day, mealEvents.mealevent_time, mealEvents.per_ID
+															  FROM meals
+															  INNER JOIN mealEvents
+															  ON meals.meal_ID = mealEvents.meal_ID
+															  WHERE mealEvents.per_ID = '$per_ID'
+															  AND mealEvents.mealevent_day = '2015-04-05'
+															  AND mealEvents.mealevent_time = '09:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="mealEvent"><strong>'.$row['meal_name'].
+															'</strong></p>';
+															}//mysqli_close($dbc);
+														}else {echo'&nbsp;';}
+														
+														?>
+														<!--relaxation-->
+														<?php
+														
+														$q = "SELECT meditations.med_name, meditEvents.medEventDay, meditEvents.medEventTime, meditEvents.per_ID
+															  FROM meditations
+															  INNER JOIN meditEvents
+															  ON meditations.med_ID = meditEvents.med_ID
+															  WHERE meditEvents.per_ID = '$per_ID'
+															  AND meditEvents.medEventDay = '2015-04-05'
+															  AND meditEvents.medEventTime = '09:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="meditEvent"><strong>'.$row['med_name'].
+															'</strong></p>';
+															}
+														}else {echo'&nbsp;';}
+														
+														?>
+														<!--exercises-->
+														<?php
+														
+														$q = "SELECT exercises.exercise_name, exerciseEvents.exerciseEventDay, exerciseEvents.exerciseEventTime, exerciseEvents.per_ID
+															  FROM exercises
+															  INNER JOIN exerciseEvents
+															  ON exercises.exercise_ID = exerciseEvents.exercise_ID
+															  WHERE exerciseEvents.per_ID = '$per_ID'
+															  AND exerciseEvents.exerciseEventDay = '2015-04-05'
+															  AND exerciseEvents.exerciseEventTime = '09:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="exerciseEvent"><strong>'.$row['exercise_name'].
+															'</strong></p>';
+															}
+														}else {echo'&nbsp;';}
+														
+														?>
+								</td><td><!--Mon9-12-->
+										<!--meals-->
+														<?php 
+														
+														$q = "SELECT meals.meal_name, mealEvents.mealevent_day, mealEvents.mealevent_time, mealEvents.per_ID
+															  FROM meals
+															  INNER JOIN mealEvents
+															  ON meals.meal_ID = mealEvents.meal_ID
+															  WHERE mealEvents.per_ID = '$per_ID'
+															  AND mealEvents.mealevent_day = '2015-04-06'
+															  AND mealEvents.mealevent_time = '09:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="mealEvent"><strong>'.$row['meal_name'].
+															'</strong></p>';
+															}//mysqli_close($dbc);
+														}else {echo'&nbsp;';}
+														
+														?>
+														<!--relaxation-->
+														<?php
+														
+														$q = "SELECT meditations.med_name, meditEvents.medEventDay, meditEvents.medEventTime, meditEvents.per_ID
+															  FROM meditations
+															  INNER JOIN meditEvents
+															  ON meditations.med_ID = meditEvents.med_ID
+															  WHERE meditEvents.per_ID = '$per_ID'
+															  AND meditEvents.medEventDay = '2015-04-06'
+															  AND meditEvents.medEventTime = '09:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="meditEvent"><strong>'.$row['med_name'].
+															'</strong></p>';
+															}
+														}else {echo'&nbsp;';}
+														
+														?>
+														<!--exercises-->
+														<?php
+														
+														$q = "SELECT exercises.exercise_name, exerciseEvents.exerciseEventDay, exerciseEvents.exerciseEventTime, exerciseEvents.per_ID
+															  FROM exercises
+															  INNER JOIN exerciseEvents
+															  ON exercises.exercise_ID = exerciseEvents.exercise_ID
+															  WHERE exerciseEvents.per_ID = '$per_ID'
+															  AND exerciseEvents.exerciseEventDay = '2015-04-06'
+															  AND exerciseEvents.exerciseEventTime = '09:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="exerciseEvent"><strong>'.$row['exercise_name'].
+															'</strong></p>';
+															}
+														}else {echo'&nbsp;';}
+														
+														?>
+								</td><td><!--Tues9-12-->
+									<!--meals-->
+														<?php 
+														
+														$q = "SELECT meals.meal_name, mealEvents.mealevent_day, mealEvents.mealevent_time, mealEvents.per_ID
+															  FROM meals
+															  INNER JOIN mealEvents
+															  ON meals.meal_ID = mealEvents.meal_ID
+															  WHERE mealEvents.per_ID = '$per_ID'
+															  AND mealEvents.mealevent_day = '2015-04-07'
+															  AND mealEvents.mealevent_time = '09:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="mealEvent"><strong>'.$row['meal_name'].
+															'</strong></p>';
+															}//mysqli_close($dbc);
+														}else {echo'&nbsp;';}
+														
+														?>
+														<!--relaxation-->
+														<?php
+														
+														$q = "SELECT meditations.med_name, meditEvents.medEventDay, meditEvents.medEventTime, meditEvents.per_ID
+															  FROM meditations
+															  INNER JOIN meditEvents
+															  ON meditations.med_ID = meditEvents.med_ID
+															  WHERE meditEvents.per_ID = '$per_ID'
+															  AND meditEvents.medEventDay = '2015-04-07'
+															  AND meditEvents.medEventTime = '09:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="meditEvent"><strong>'.$row['med_name'].
+															'</strong></p>';
+															}
+														}else {echo'&nbsp;';}
+														
+														?>
+														<!--exercises-->
+														<?php
+														
+														$q = "SELECT exercises.exercise_name, exerciseEvents.exerciseEventDay, exerciseEvents.exerciseEventTime, exerciseEvents.per_ID
+															  FROM exercises
+															  INNER JOIN exerciseEvents
+															  ON exercises.exercise_ID = exerciseEvents.exercise_ID
+															  WHERE exerciseEvents.per_ID = '$per_ID'
+															  AND exerciseEvents.exerciseEventDay = '2015-04-07'
+															  AND exerciseEvents.exerciseEventTime = '09:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="exerciseEvent"><strong>'.$row['exercise_name'].
+															'</strong></p>';
+															}
+														}else {echo'&nbsp;';}
+														
+														?>
+								</td><td><!--Wed9-12-->
+									<!--meals-->
+														<?php 
+														
+														$q = "SELECT meals.meal_name, mealEvents.mealevent_day, mealEvents.mealevent_time, mealEvents.per_ID
+															  FROM meals
+															  INNER JOIN mealEvents
+															  ON meals.meal_ID = mealEvents.meal_ID
+															  WHERE mealEvents.per_ID = '$per_ID'
+															  AND mealEvents.mealevent_day = '2015-04-08'
+															  AND mealEvents.mealevent_time = '09:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="mealEvent"><strong>'.$row['meal_name'].
+															'</strong></p>';
+															}//mysqli_close($dbc);
+														}else {echo'&nbsp;';}
+														
+														?>
+														<!--relaxation-->
+														<?php
+														
+														$q = "SELECT meditations.med_name, meditEvents.medEventDay, meditEvents.medEventTime, meditEvents.per_ID
+															  FROM meditations
+															  INNER JOIN meditEvents
+															  ON meditations.med_ID = meditEvents.med_ID
+															  WHERE meditEvents.per_ID = '$per_ID'
+															  AND meditEvents.medEventDay = '2015-04-08'
+															  AND meditEvents.medEventTime = '09:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="meditEvent"><strong>'.$row['med_name'].
+															'</strong></p>';
+															}
+														}else {echo'&nbsp;';}
+														
+														?>
+														<!--exercises-->
+														<?php
+														
+														$q = "SELECT exercises.exercise_name, exerciseEvents.exerciseEventDay, exerciseEvents.exerciseEventTime, exerciseEvents.per_ID
+															  FROM exercises
+															  INNER JOIN exerciseEvents
+															  ON exercises.exercise_ID = exerciseEvents.exercise_ID
+															  WHERE exerciseEvents.per_ID = '$per_ID'
+															  AND exerciseEvents.exerciseEventDay = '2015-04-08'
+															  AND exerciseEvents.exerciseEventTime = '09:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="exerciseEvent"><strong>'.$row['exercise_name'].
+															'</strong></p>';
+															}
+														}else {echo'&nbsp;';}
+														
+														?>
+								</td><td><!--Thurs9-12-->
+									<!--meals-->
+														<?php 
+														
+														$q = "SELECT meals.meal_name, mealEvents.mealevent_day, mealEvents.mealevent_time, mealEvents.per_ID
+															  FROM meals
+															  INNER JOIN mealEvents
+															  ON meals.meal_ID = mealEvents.meal_ID
+															  WHERE mealEvents.per_ID = '$per_ID'
+															  AND mealEvents.mealevent_day = '2015-04-09'
+															  AND mealEvents.mealevent_time = '09:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="mealEvent"><strong>'.$row['meal_name'].
+															'</strong></p>';
+															}//mysqli_close($dbc);
+														}else {echo'&nbsp;';}
+														
+														?>
+														<!--relaxation-->
+														<?php
+														
+														$q = "SELECT meditations.med_name, meditEvents.medEventDay, meditEvents.medEventTime, meditEvents.per_ID
+															  FROM meditations
+															  INNER JOIN meditEvents
+															  ON meditations.med_ID = meditEvents.med_ID
+															  WHERE meditEvents.per_ID = '$per_ID'
+															  AND meditEvents.medEventDay = '2015-04-09'
+															  AND meditEvents.medEventTime = '09:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="meditEvent"><strong>'.$row['med_name'].
+															'</strong></p>';
+															}
+														}else {echo'&nbsp;';}
+														
+														?>
+														<!--exercises-->
+														<?php
+														
+														$q = "SELECT exercises.exercise_name, exerciseEvents.exerciseEventDay, exerciseEvents.exerciseEventTime, exerciseEvents.per_ID
+															  FROM exercises
+															  INNER JOIN exerciseEvents
+															  ON exercises.exercise_ID = exerciseEvents.exercise_ID
+															  WHERE exerciseEvents.per_ID = '$per_ID'
+															  AND exerciseEvents.exerciseEventDay = '2015-04-09'
+															  AND exerciseEvents.exerciseEventTime = '09:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="exerciseEvent"><strong>'.$row['exercise_name'].
+															'</strong></p>';
+															}
+														}else {echo'&nbsp;';}
+														
+														?>
+								</td><td><!--Fri9-12-->
+									<!--meals-->
+														<?php 
+														
+														$q = "SELECT meals.meal_name, mealEvents.mealevent_day, mealEvents.mealevent_time, mealEvents.per_ID
+															  FROM meals
+															  INNER JOIN mealEvents
+															  ON meals.meal_ID = mealEvents.meal_ID
+															  WHERE mealEvents.per_ID = '$per_ID'
+															  AND mealEvents.mealevent_day = '2015-04-10'
+															  AND mealEvents.mealevent_time = '09:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="mealEvent"><strong>'.$row['meal_name'].
+															'</strong></p>';
+															}//mysqli_close($dbc);
+														}else {echo'&nbsp;';}
+														
+														?>
+														<!--relaxation-->
+														<?php
+														
+														$q = "SELECT meditations.med_name, meditEvents.medEventDay, meditEvents.medEventTime, meditEvents.per_ID
+															  FROM meditations
+															  INNER JOIN meditEvents
+															  ON meditations.med_ID = meditEvents.med_ID
+															  WHERE meditEvents.per_ID = '$per_ID'
+															  AND meditEvents.medEventDay = '2015-04-10'
+															  AND meditEvents.medEventTime = '09:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="meditEvent"><strong>'.$row['med_name'].
+															'</strong></p>';
+															}
+														}else {echo'&nbsp;';}
+														
+														?>
+														<!--exercises-->
+														<?php
+														
+														$q = "SELECT exercises.exercise_name, exerciseEvents.exerciseEventDay, exerciseEvents.exerciseEventTime, exerciseEvents.per_ID
+															  FROM exercises
+															  INNER JOIN exerciseEvents
+															  ON exercises.exercise_ID = exerciseEvents.exercise_ID
+															  WHERE exerciseEvents.per_ID = '$per_ID'
+															  AND exerciseEvents.exerciseEventDay = '2015-04-10'
+															  AND exerciseEvents.exerciseEventTime = '09:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="exerciseEvent"><strong>'.$row['exercise_name'].
+															'</strong></p>';
+															}
+														}else {echo'&nbsp;';}
+														
+														?>
+								</td><td><!--Sat9-12-->
+									<!--meals-->
+														<?php 
+														
+														$q = "SELECT meals.meal_name, mealEvents.mealevent_day, mealEvents.mealevent_time, mealEvents.per_ID
+															  FROM meals
+															  INNER JOIN mealEvents
+															  ON meals.meal_ID = mealEvents.meal_ID
+															  WHERE mealEvents.per_ID = '$per_ID'
+															  AND mealEvents.mealevent_day = '2015-04-11'
+															  AND mealEvents.mealevent_time = '09:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="mealEvent"><strong>'.$row['meal_name'].
+															'</strong></p>';
+															}//mysqli_close($dbc);
+														}else {echo'&nbsp;';}
+														
+														?>
+														<!--relaxation-->
+														<?php
+														
+														$q = "SELECT meditations.med_name, meditEvents.medEventDay, meditEvents.medEventTime, meditEvents.per_ID
+															  FROM meditations
+															  INNER JOIN meditEvents
+															  ON meditations.med_ID = meditEvents.med_ID
+															  WHERE meditEvents.per_ID = '$per_ID'
+															  AND meditEvents.medEventDay = '2015-04-11'
+															  AND meditEvents.medEventTime = '09:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="meditEvent"><strong>'.$row['med_name'].
+															'</strong></p>';
+															}
+														}else {echo'&nbsp;';}
+														
+														?>
+														<!--exercises-->
+														<?php
+														
+														$q = "SELECT exercises.exercise_name, exerciseEvents.exerciseEventDay, exerciseEvents.exerciseEventTime, exerciseEvents.per_ID
+															  FROM exercises
+															  INNER JOIN exerciseEvents
+															  ON exercises.exercise_ID = exerciseEvents.exercise_ID
+															  WHERE exerciseEvents.per_ID = '$per_ID'
+															  AND exerciseEvents.exerciseEventDay = '2015-04-11'
+															  AND exerciseEvents.exerciseEventTime = '09:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="exerciseEvent"><strong>'.$row['exercise_name'].
+															'</strong></p>';
+															}
+														}else {echo'&nbsp;';}
+														
+														?>
+								</td></tr>
+								<tr><td>12pm - 3pm</td><td><!--Sun12-3-->
+									<!--meals-->
+														<?php 
+														
+														$q = "SELECT meals.meal_name, mealEvents.mealevent_day, mealEvents.mealevent_time, mealEvents.per_ID
+															  FROM meals
+															  INNER JOIN mealEvents
+															  ON meals.meal_ID = mealEvents.meal_ID
+															  WHERE mealEvents.per_ID = '$per_ID'
+															  AND mealEvents.mealevent_day = '2015-04-05'
+															  AND mealEvents.mealevent_time = '12:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="mealEvent"><strong>'.$row['meal_name'].
+															'</strong></p>';
+															}//mysqli_close($dbc);
+														}else {echo'&nbsp;';}
+														
+														?>
+														<!--relaxation-->
+														<?php
+														
+														$q = "SELECT meditations.med_name, meditEvents.medEventDay, meditEvents.medEventTime, meditEvents.per_ID
+															  FROM meditations
+															  INNER JOIN meditEvents
+															  ON meditations.med_ID = meditEvents.med_ID
+															  WHERE meditEvents.per_ID = '$per_ID'
+															  AND meditEvents.medEventDay = '2015-04-05'
+															  AND meditEvents.medEventTime = '12:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="meditEvent"><strong>'.$row['med_name'].
+															'</strong></p>';
+															}
+														}else {echo'&nbsp;';}
+														
+														?>
+														<!--exercises-->
+														<?php
+														
+														$q = "SELECT exercises.exercise_name, exerciseEvents.exerciseEventDay, exerciseEvents.exerciseEventTime, exerciseEvents.per_ID
+															  FROM exercises
+															  INNER JOIN exerciseEvents
+															  ON exercises.exercise_ID = exerciseEvents.exercise_ID
+															  WHERE exerciseEvents.per_ID = '$per_ID'
+															  AND exerciseEvents.exerciseEventDay = '2015-04-05'
+															  AND exerciseEvents.exerciseEventTime = '12:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="exerciseEvent"><strong>'.$row['exercise_name'].
+															'</strong></p>';
+															}
+														}else {echo'&nbsp;';}
+														
+														?>
+								</td><td><!--Mon12-3-->
+									<!--meals-->
+														<?php 
+														
+														$q = "SELECT meals.meal_name, mealEvents.mealevent_day, mealEvents.mealevent_time, mealEvents.per_ID
+															  FROM meals
+															  INNER JOIN mealEvents
+															  ON meals.meal_ID = mealEvents.meal_ID
+															  WHERE mealEvents.per_ID = '$per_ID'
+															  AND mealEvents.mealevent_day = '2015-04-06'
+															  AND mealEvents.mealevent_time = '12:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="mealEvent"><strong>'.$row['meal_name'].
+															'</strong></p>';
+															}//mysqli_close($dbc);
+														}else {echo'&nbsp;';}
+														
+														?>
+														<!--relaxation-->
+														<?php
+														
+														$q = "SELECT meditations.med_name, meditEvents.medEventDay, meditEvents.medEventTime, meditEvents.per_ID
+															  FROM meditations
+															  INNER JOIN meditEvents
+															  ON meditations.med_ID = meditEvents.med_ID
+															  WHERE meditEvents.per_ID = '$per_ID'
+															  AND meditEvents.medEventDay = '2015-04-06'
+															  AND meditEvents.medEventTime = '12:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="meditEvent"><strong>'.$row['med_name'].
+															'</strong></p>';
+															}
+														}else {echo'&nbsp;';}
+														
+														?>
+														<!--exercises-->
+														<?php
+														
+														$q = "SELECT exercises.exercise_name, exerciseEvents.exerciseEventDay, exerciseEvents.exerciseEventTime, exerciseEvents.per_ID
+															  FROM exercises
+															  INNER JOIN exerciseEvents
+															  ON exercises.exercise_ID = exerciseEvents.exercise_ID
+															  WHERE exerciseEvents.per_ID = '$per_ID'
+															  AND exerciseEvents.exerciseEventDay = '2015-04-06'
+															  AND exerciseEvents.exerciseEventTime = '12:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="exerciseEvent"><strong>'.$row['exercise_name'].
+															'</strong></p>';
+															}
+														}else {echo'&nbsp;';}
+														
+														?>
+								</td><td><!--Tues12-3-->
+									<!--meals-->
+														<?php 
+														
+														$q = "SELECT meals.meal_name, mealEvents.mealevent_day, mealEvents.mealevent_time, mealEvents.per_ID
+															  FROM meals
+															  INNER JOIN mealEvents
+															  ON meals.meal_ID = mealEvents.meal_ID
+															  WHERE mealEvents.per_ID = '$per_ID'
+															  AND mealEvents.mealevent_day = '2015-04-07'
+															  AND mealEvents.mealevent_time = '12:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="mealEvent"><strong>'.$row['meal_name'].
+															'</strong></p>';
+															}//mysqli_close($dbc);
+														}else {echo'&nbsp;';}
+														
+														?>
+														<!--relaxation-->
+														<?php
+														
+														$q = "SELECT meditations.med_name, meditEvents.medEventDay, meditEvents.medEventTime, meditEvents.per_ID
+															  FROM meditations
+															  INNER JOIN meditEvents
+															  ON meditations.med_ID = meditEvents.med_ID
+															  WHERE meditEvents.per_ID = '$per_ID'
+															  AND meditEvents.medEventDay = '2015-04-07'
+															  AND meditEvents.medEventTime = '12:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="meditEvent"><strong>'.$row['med_name'].
+															'</strong></p>';
+															}
+														}else {echo'&nbsp;';}
+														
+														?>
+														<!--exercises-->
+														<?php
+														
+														$q = "SELECT exercises.exercise_name, exerciseEvents.exerciseEventDay, exerciseEvents.exerciseEventTime, exerciseEvents.per_ID
+															  FROM exercises
+															  INNER JOIN exerciseEvents
+															  ON exercises.exercise_ID = exerciseEvents.exercise_ID
+															  WHERE exerciseEvents.per_ID = '$per_ID'
+															  AND exerciseEvents.exerciseEventDay = '2015-04-07'
+															  AND exerciseEvents.exerciseEventTime = '12:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="exerciseEvent"><strong>'.$row['exercise_name'].
+															'</strong></p>';
+															}
+														}else {echo'&nbsp;';}
+														
+														?>
+								</td><td><!--Wed12-3-->
+									<!--meals-->
+														<?php 
+														
+														$q = "SELECT meals.meal_name, mealEvents.mealevent_day, mealEvents.mealevent_time, mealEvents.per_ID
+															  FROM meals
+															  INNER JOIN mealEvents
+															  ON meals.meal_ID = mealEvents.meal_ID
+															  WHERE mealEvents.per_ID = '$per_ID'
+															  AND mealEvents.mealevent_day = '2015-04-08'
+															  AND mealEvents.mealevent_time = '12:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="mealEvent"><strong>'.$row['meal_name'].
+															'</strong></p>';
+															}//mysqli_close($dbc);
+														}else {echo'&nbsp;';}
+														
+														?>
+														<!--relaxation-->
+														<?php
+														
+														$q = "SELECT meditations.med_name, meditEvents.medEventDay, meditEvents.medEventTime, meditEvents.per_ID
+															  FROM meditations
+															  INNER JOIN meditEvents
+															  ON meditations.med_ID = meditEvents.med_ID
+															  WHERE meditEvents.per_ID = '$per_ID'
+															  AND meditEvents.medEventDay = '2015-04-08'
+															  AND meditEvents.medEventTime = '12:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="meditEvent"><strong>'.$row['med_name'].
+															'</strong></p>';
+															}
+														}else {echo'&nbsp;';}
+														
+														?>
+														<!--exercises-->
+														<?php
+														
+														$q = "SELECT exercises.exercise_name, exerciseEvents.exerciseEventDay, exerciseEvents.exerciseEventTime, exerciseEvents.per_ID
+															  FROM exercises
+															  INNER JOIN exerciseEvents
+															  ON exercises.exercise_ID = exerciseEvents.exercise_ID
+															  WHERE exerciseEvents.per_ID = '$per_ID'
+															  AND exerciseEvents.exerciseEventDay = '2015-04-08'
+															  AND exerciseEvents.exerciseEventTime = '12:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="exerciseEvent"><strong>'.$row['exercise_name'].
+															'</strong></p>';
+															}
+														}else {echo'&nbsp;';}
+														
+														?>
+								</td><td><!--Thurs12-3-->
+									<!--meals-->
+														<?php 
+														
+														$q = "SELECT meals.meal_name, mealEvents.mealevent_day, mealEvents.mealevent_time, mealEvents.per_ID
+															  FROM meals
+															  INNER JOIN mealEvents
+															  ON meals.meal_ID = mealEvents.meal_ID
+															  WHERE mealEvents.per_ID = '$per_ID'
+															  AND mealEvents.mealevent_day = '2015-04-09'
+															  AND mealEvents.mealevent_time = '12:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="mealEvent"><strong>'.$row['meal_name'].
+															'</strong></p>';
+															}//mysqli_close($dbc);
+														}else {echo'&nbsp;';}
+														
+														?>
+														<!--relaxation-->
+														<?php
+														
+														$q = "SELECT meditations.med_name, meditEvents.medEventDay, meditEvents.medEventTime, meditEvents.per_ID
+															  FROM meditations
+															  INNER JOIN meditEvents
+															  ON meditations.med_ID = meditEvents.med_ID
+															  WHERE meditEvents.per_ID = '$per_ID'
+															  AND meditEvents.medEventDay = '2015-04-09'
+															  AND meditEvents.medEventTime = '12:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="meditEvent"><strong>'.$row['med_name'].
+															'</strong></p>';
+															}
+														}else {echo'&nbsp;';}
+														
+														?>
+														<!--exercises-->
+														<?php
+														
+														$q = "SELECT exercises.exercise_name, exerciseEvents.exerciseEventDay, exerciseEvents.exerciseEventTime, exerciseEvents.per_ID
+															  FROM exercises
+															  INNER JOIN exerciseEvents
+															  ON exercises.exercise_ID = exerciseEvents.exercise_ID
+															  WHERE exerciseEvents.per_ID = '$per_ID'
+															  AND exerciseEvents.exerciseEventDay = '2015-04-09'
+															  AND exerciseEvents.exerciseEventTime = '12:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="exerciseEvent"><strong>'.$row['exercise_name'].
+															'</strong></p>';
+															}
+														}else {echo'&nbsp;';}
+														
+														?>
+								</td><td><!--Fri12-3-->
+									<!--meals-->
+														<?php 
+														
+														$q = "SELECT meals.meal_name, mealEvents.mealevent_day, mealEvents.mealevent_time, mealEvents.per_ID
+															  FROM meals
+															  INNER JOIN mealEvents
+															  ON meals.meal_ID = mealEvents.meal_ID
+															  WHERE mealEvents.per_ID = '$per_ID'
+															  AND mealEvents.mealevent_day = '2015-04-10'
+															  AND mealEvents.mealevent_time = '12:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="mealEvent"><strong>'.$row['meal_name'].
+															'</strong></p>';
+															}//mysqli_close($dbc);
+														}else {echo'&nbsp;';}
+														
+														?>
+														<!--relaxation-->
+														<?php
+														
+														$q = "SELECT meditations.med_name, meditEvents.medEventDay, meditEvents.medEventTime, meditEvents.per_ID
+															  FROM meditations
+															  INNER JOIN meditEvents
+															  ON meditations.med_ID = meditEvents.med_ID
+															  WHERE meditEvents.per_ID = '$per_ID'
+															  AND meditEvents.medEventDay = '2015-04-10'
+															  AND meditEvents.medEventTime = '12:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="meditEvent"><strong>'.$row['med_name'].
+															'</strong></p>';
+															}
+														}else {echo'&nbsp;';}
+														
+														?>
+														<!--exercises-->
+														<?php
+														
+														$q = "SELECT exercises.exercise_name, exerciseEvents.exerciseEventDay, exerciseEvents.exerciseEventTime, exerciseEvents.per_ID
+															  FROM exercises
+															  INNER JOIN exerciseEvents
+															  ON exercises.exercise_ID = exerciseEvents.exercise_ID
+															  WHERE exerciseEvents.per_ID = '$per_ID'
+															  AND exerciseEvents.exerciseEventDay = '2015-04-10'
+															  AND exerciseEvents.exerciseEventTime = '12:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="exerciseEvent"><strong>'.$row['exercise_name'].
+															'</strong></p>';
+															}
+														}else {echo'&nbsp;';}
+														
+														?>
+								</td><td><!--Sat12-3-->
+									<!--meals-->
+														<?php 
+														
+														$q = "SELECT meals.meal_name, mealEvents.mealevent_day, mealEvents.mealevent_time, mealEvents.per_ID
+															  FROM meals
+															  INNER JOIN mealEvents
+															  ON meals.meal_ID = mealEvents.meal_ID
+															  WHERE mealEvents.per_ID = '$per_ID'
+															  AND mealEvents.mealevent_day = '2015-04-11'
+															  AND mealEvents.mealevent_time = '12:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="mealEvent"><strong>'.$row['meal_name'].
+															'</strong></p>';
+															}//mysqli_close($dbc);
+														}else {echo'&nbsp;';}
+														
+														?>
+														<!--relaxation-->
+														<?php
+														
+														$q = "SELECT meditations.med_name, meditEvents.medEventDay, meditEvents.medEventTime, meditEvents.per_ID
+															  FROM meditations
+															  INNER JOIN meditEvents
+															  ON meditations.med_ID = meditEvents.med_ID
+															  WHERE meditEvents.per_ID = '$per_ID'
+															  AND meditEvents.medEventDay = '2015-04-11'
+															  AND meditEvents.medEventTime = '12:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="meditEvent"><strong>'.$row['med_name'].
+															'</strong></p>';
+															}
+														}else {echo'&nbsp;';}
+														
+														?>
+														<!--exercises-->
+														<?php
+														
+														$q = "SELECT exercises.exercise_name, exerciseEvents.exerciseEventDay, exerciseEvents.exerciseEventTime, exerciseEvents.per_ID
+															  FROM exercises
+															  INNER JOIN exerciseEvents
+															  ON exercises.exercise_ID = exerciseEvents.exercise_ID
+															  WHERE exerciseEvents.per_ID = '$per_ID'
+															  AND exerciseEvents.exerciseEventDay = '2015-04-11'
+															  AND exerciseEvents.exerciseEventTime = '12:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="exerciseEvent"><strong>'.$row['exercise_name'].
+															'</strong></p>';
+															}
+														}else {echo'&nbsp;';}
+														
+														?>
+								</td></tr>
+								<tr><td>3pm - 6pm</td><td><!--Sun3-6-->
+									<!--meals-->
+														<?php 
+														
+														$q = "SELECT meals.meal_name, mealEvents.mealevent_day, mealEvents.mealevent_time, mealEvents.per_ID
+															  FROM meals
+															  INNER JOIN mealEvents
+															  ON meals.meal_ID = mealEvents.meal_ID
+															  WHERE mealEvents.per_ID = '$per_ID'
+															  AND mealEvents.mealevent_day = '2015-04-05'
+															  AND mealEvents.mealevent_time = '15:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="mealEvent"><strong>'.$row['meal_name'].
+															'</strong></p>';
+															}//mysqli_close($dbc);
+														}else {echo'&nbsp;';}
+														
+														?>
+														<!--relaxation-->
+														<?php
+														
+														$q = "SELECT meditations.med_name, meditEvents.medEventDay, meditEvents.medEventTime, meditEvents.per_ID
+															  FROM meditations
+															  INNER JOIN meditEvents
+															  ON meditations.med_ID = meditEvents.med_ID
+															  WHERE meditEvents.per_ID = '$per_ID'
+															  AND meditEvents.medEventDay = '2015-04-05'
+															  AND meditEvents.medEventTime = '15:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="meditEvent"><strong>'.$row['med_name'].
+															'</strong></p>';
+															}
+														}else {echo'&nbsp;';}
+														
+														?>
+														<!--exercises-->
+														<?php
+														
+														$q = "SELECT exercises.exercise_name, exerciseEvents.exerciseEventDay, exerciseEvents.exerciseEventTime, exerciseEvents.per_ID
+															  FROM exercises
+															  INNER JOIN exerciseEvents
+															  ON exercises.exercise_ID = exerciseEvents.exercise_ID
+															  WHERE exerciseEvents.per_ID = '$per_ID'
+															  AND exerciseEvents.exerciseEventDay = '2015-04-05'
+															  AND exerciseEvents.exerciseEventTime = '15:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="exerciseEvent"><strong>'.$row['exercise_name'].
+															'</strong></p>';
+															}
+														}else {echo'&nbsp;';}
+														
+														?>
+								</td><td><!--Mon3-6-->
+									<!--meals-->
+														<?php 
+														
+														$q = "SELECT meals.meal_name, mealEvents.mealevent_day, mealEvents.mealevent_time, mealEvents.per_ID
+															  FROM meals
+															  INNER JOIN mealEvents
+															  ON meals.meal_ID = mealEvents.meal_ID
+															  WHERE mealEvents.per_ID = '$per_ID'
+															  AND mealEvents.mealevent_day = '2015-04-06'
+															  AND mealEvents.mealevent_time = '15:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="mealEvent"><strong>'.$row['meal_name'].
+															'</strong></p>';
+															}//mysqli_close($dbc);
+														}else {echo'&nbsp;';}
+														
+														?>
+														<!--relaxation-->
+														<?php
+														
+														$q = "SELECT meditations.med_name, meditEvents.medEventDay, meditEvents.medEventTime, meditEvents.per_ID
+															  FROM meditations
+															  INNER JOIN meditEvents
+															  ON meditations.med_ID = meditEvents.med_ID
+															  WHERE meditEvents.per_ID = '$per_ID'
+															  AND meditEvents.medEventDay = '2015-04-06'
+															  AND meditEvents.medEventTime = '15:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="meditEvent"><strong>'.$row['med_name'].
+															'</strong></p>';
+															}
+														}else {echo'&nbsp;';}
+														
+														?>
+														<!--exercises-->
+														<?php
+														
+														$q = "SELECT exercises.exercise_name, exerciseEvents.exerciseEventDay, exerciseEvents.exerciseEventTime, exerciseEvents.per_ID
+															  FROM exercises
+															  INNER JOIN exerciseEvents
+															  ON exercises.exercise_ID = exerciseEvents.exercise_ID
+															  WHERE exerciseEvents.per_ID = '$per_ID'
+															  AND exerciseEvents.exerciseEventDay = '2015-04-06'
+															  AND exerciseEvents.exerciseEventTime = '15:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="exerciseEvent"><strong>'.$row['exercise_name'].
+															'</strong></p>';
+															}
+														}else {echo'&nbsp;';}
+														
+														?>
+								</td><td><!--Tues3-6-->
+									<!--meals-->
+														<?php 
+														
+														$q = "SELECT meals.meal_name, mealEvents.mealevent_day, mealEvents.mealevent_time, mealEvents.per_ID
+															  FROM meals
+															  INNER JOIN mealEvents
+															  ON meals.meal_ID = mealEvents.meal_ID
+															  WHERE mealEvents.per_ID = '$per_ID'
+															  AND mealEvents.mealevent_day = '2015-04-07'
+															  AND mealEvents.mealevent_time = '15:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="mealEvent"><strong>'.$row['meal_name'].
+															'</strong></p>';
+															}//mysqli_close($dbc);
+														}else {echo'&nbsp;';}
+														
+														?>
+														<!--relaxation-->
+														<?php
+														
+														$q = "SELECT meditations.med_name, meditEvents.medEventDay, meditEvents.medEventTime, meditEvents.per_ID
+															  FROM meditations
+															  INNER JOIN meditEvents
+															  ON meditations.med_ID = meditEvents.med_ID
+															  WHERE meditEvents.per_ID = '$per_ID'
+															  AND meditEvents.medEventDay = '2015-04-07'
+															  AND meditEvents.medEventTime = '15:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="meditEvent"><strong>'.$row['med_name'].
+															'</strong></p>';
+															}
+														}else {echo'&nbsp;';}
+														
+														?>
+														<!--exercises-->
+														<?php
+														
+														$q = "SELECT exercises.exercise_name, exerciseEvents.exerciseEventDay, exerciseEvents.exerciseEventTime, exerciseEvents.per_ID
+															  FROM exercises
+															  INNER JOIN exerciseEvents
+															  ON exercises.exercise_ID = exerciseEvents.exercise_ID
+															  WHERE exerciseEvents.per_ID = '$per_ID'
+															  AND exerciseEvents.exerciseEventDay = '2015-04-07'
+															  AND exerciseEvents.exerciseEventTime = '15:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="exerciseEvent"><strong>'.$row['exercise_name'].
+															'</strong></p>';
+															}
+														}else {echo'&nbsp;';}
+														
+														?>
+								</td><td><!--Wed3-6-->
+									<!--meals-->
+														<?php 
+														
+														$q = "SELECT meals.meal_name, mealEvents.mealevent_day, mealEvents.mealevent_time, mealEvents.per_ID
+															  FROM meals
+															  INNER JOIN mealEvents
+															  ON meals.meal_ID = mealEvents.meal_ID
+															  WHERE mealEvents.per_ID = '$per_ID'
+															  AND mealEvents.mealevent_day = '2015-04-08'
+															  AND mealEvents.mealevent_time = '15:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="mealEvent"><strong>'.$row['meal_name'].
+															'</strong></p>';
+															}//mysqli_close($dbc);
+														}else {echo'&nbsp;';}
+														
+														?>
+														<!--relaxation-->
+														<?php
+														
+														$q = "SELECT meditations.med_name, meditEvents.medEventDay, meditEvents.medEventTime, meditEvents.per_ID
+															  FROM meditations
+															  INNER JOIN meditEvents
+															  ON meditations.med_ID = meditEvents.med_ID
+															  WHERE meditEvents.per_ID = '$per_ID'
+															  AND meditEvents.medEventDay = '2015-04-08'
+															  AND meditEvents.medEventTime = '15:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="meditEvent"><strong>'.$row['med_name'].
+															'</strong></p>';
+															}
+														}else {echo'&nbsp;';}
+														
+														?>
+														<!--exercises-->
+														<?php
+														
+														$q = "SELECT exercises.exercise_name, exerciseEvents.exerciseEventDay, exerciseEvents.exerciseEventTime, exerciseEvents.per_ID
+															  FROM exercises
+															  INNER JOIN exerciseEvents
+															  ON exercises.exercise_ID = exerciseEvents.exercise_ID
+															  WHERE exerciseEvents.per_ID = '$per_ID'
+															  AND exerciseEvents.exerciseEventDay = '2015-04-08'
+															  AND exerciseEvents.exerciseEventTime = '15:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="exerciseEvent"><strong>'.$row['exercise_name'].
+															'</strong></p>';
+															}
+														}else {echo'&nbsp;';}
+														
+														?>
+								</td><td><!--Thurs3-6-->
+									<!--meals-->
+														<?php 
+														
+														$q = "SELECT meals.meal_name, mealEvents.mealevent_day, mealEvents.mealevent_time, mealEvents.per_ID
+															  FROM meals
+															  INNER JOIN mealEvents
+															  ON meals.meal_ID = mealEvents.meal_ID
+															  WHERE mealEvents.per_ID = '$per_ID'
+															  AND mealEvents.mealevent_day = '2015-04-09'
+															  AND mealEvents.mealevent_time = '15:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="mealEvent"><strong>'.$row['meal_name'].
+															'</strong></p>';
+															}//mysqli_close($dbc);
+														}else {echo'&nbsp;';}
+														
+														?>
+														<!--relaxation-->
+														<?php
+														
+														$q = "SELECT meditations.med_name, meditEvents.medEventDay, meditEvents.medEventTime, meditEvents.per_ID
+															  FROM meditations
+															  INNER JOIN meditEvents
+															  ON meditations.med_ID = meditEvents.med_ID
+															  WHERE meditEvents.per_ID = '$per_ID'
+															  AND meditEvents.medEventDay = '2015-04-09'
+															  AND meditEvents.medEventTime = '15:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="meditEvent"><strong>'.$row['med_name'].
+															'</strong></p>';
+															}
+														}else {echo'&nbsp;';}
+														
+														?>
+														<!--exercises-->
+														<?php
+														
+														$q = "SELECT exercises.exercise_name, exerciseEvents.exerciseEventDay, exerciseEvents.exerciseEventTime, exerciseEvents.per_ID
+															  FROM exercises
+															  INNER JOIN exerciseEvents
+															  ON exercises.exercise_ID = exerciseEvents.exercise_ID
+															  WHERE exerciseEvents.per_ID = '$per_ID'
+															  AND exerciseEvents.exerciseEventDay = '2015-04-09'
+															  AND exerciseEvents.exerciseEventTime = '15:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="exerciseEvent"><strong>'.$row['exercise_name'].
+															'</strong></p>';
+															}
+														}else {echo'&nbsp;';}
+														
+														?>
+								</td><td><!--Fri3-6-->
+									<!--meals-->
+														<?php 
+														
+														$q = "SELECT meals.meal_name, mealEvents.mealevent_day, mealEvents.mealevent_time, mealEvents.per_ID
+															  FROM meals
+															  INNER JOIN mealEvents
+															  ON meals.meal_ID = mealEvents.meal_ID
+															  WHERE mealEvents.per_ID = '$per_ID'
+															  AND mealEvents.mealevent_day = '2015-04-10'
+															  AND mealEvents.mealevent_time = '15:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="mealEvent"><strong>'.$row['meal_name'].
+															'</strong></p>';
+															}//mysqli_close($dbc);
+														}else {echo'&nbsp;';}
+														
+														?>
+														<!--relaxation-->
+														<?php
+														
+														$q = "SELECT meditations.med_name, meditEvents.medEventDay, meditEvents.medEventTime, meditEvents.per_ID
+															  FROM meditations
+															  INNER JOIN meditEvents
+															  ON meditations.med_ID = meditEvents.med_ID
+															  WHERE meditEvents.per_ID = '$per_ID'
+															  AND meditEvents.medEventDay = '2015-04-10'
+															  AND meditEvents.medEventTime = '15:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="meditEvent"><strong>'.$row['med_name'].
+															'</strong></p>';
+															}
+														}else {echo'&nbsp;';}
+														
+														?>
+														<!--exercises-->
+														<?php
+														
+														$q = "SELECT exercises.exercise_name, exerciseEvents.exerciseEventDay, exerciseEvents.exerciseEventTime, exerciseEvents.per_ID
+															  FROM exercises
+															  INNER JOIN exerciseEvents
+															  ON exercises.exercise_ID = exerciseEvents.exercise_ID
+															  WHERE exerciseEvents.per_ID = '$per_ID'
+															  AND exerciseEvents.exerciseEventDay = '2015-04-10'
+															  AND exerciseEvents.exerciseEventTime = '15:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="exerciseEvent"><strong>'.$row['exercise_name'].
+															'</strong></p>';
+															}
+														}else {echo'&nbsp;';}
+														
+														?>
+								</td><td><!--Sat3-6-->
+									<!--meals-->
+														<?php 
+														
+														$q = "SELECT meals.meal_name, mealEvents.mealevent_day, mealEvents.mealevent_time, mealEvents.per_ID
+															  FROM meals
+															  INNER JOIN mealEvents
+															  ON meals.meal_ID = mealEvents.meal_ID
+															  WHERE mealEvents.per_ID = '$per_ID'
+															  AND mealEvents.mealevent_day = '2015-04-11'
+															  AND mealEvents.mealevent_time = '15:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="mealEvent"><strong>'.$row['meal_name'].
+															'</strong></p>';
+															}//mysqli_close($dbc);
+														}else {echo'&nbsp;';}
+														
+														?>
+														<!--relaxation-->
+														<?php
+														
+														$q = "SELECT meditations.med_name, meditEvents.medEventDay, meditEvents.medEventTime, meditEvents.per_ID
+															  FROM meditations
+															  INNER JOIN meditEvents
+															  ON meditations.med_ID = meditEvents.med_ID
+															  WHERE meditEvents.per_ID = '$per_ID'
+															  AND meditEvents.medEventDay = '2015-04-11'
+															  AND meditEvents.medEventTime = '15:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="meditEvent"><strong>'.$row['med_name'].
+															'</strong></p>';
+															}
+														}else {echo'&nbsp;';}
+														
+														?>
+														<!--exercises-->
+														<?php
+														
+														$q = "SELECT exercises.exercise_name, exerciseEvents.exerciseEventDay, exerciseEvents.exerciseEventTime, exerciseEvents.per_ID
+															  FROM exercises
+															  INNER JOIN exerciseEvents
+															  ON exercises.exercise_ID = exerciseEvents.exercise_ID
+															  WHERE exerciseEvents.per_ID = '$per_ID'
+															  AND exerciseEvents.exerciseEventDay = '2015-04-11'
+															  AND exerciseEvents.exerciseEventTime = '15:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="exerciseEvent"><strong>'.$row['exercise_name'].
+															'</strong></p>';
+															}
+														}else {echo'&nbsp;';}
+														
+														?>
+								</td></tr>
+								<tr><td>6pm - 9pm</td><td><!--Sun6p-9-->
+									<!--meals-->
+														<?php 
+														
+														$q = "SELECT meals.meal_name, mealEvents.mealevent_day, mealEvents.mealevent_time, mealEvents.per_ID
+															  FROM meals
+															  INNER JOIN mealEvents
+															  ON meals.meal_ID = mealEvents.meal_ID
+															  WHERE mealEvents.per_ID = '$per_ID'
+															  AND mealEvents.mealevent_day = '2015-04-05'
+															  AND mealEvents.mealevent_time = '18:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="mealEvent"><strong>'.$row['meal_name'].
+															'</strong></p>';
+															}//mysqli_close($dbc);
+														}else {echo'&nbsp;';}
+														
+														?>
+														<!--relaxation-->
+														<?php
+														
+														$q = "SELECT meditations.med_name, meditEvents.medEventDay, meditEvents.medEventTime, meditEvents.per_ID
+															  FROM meditations
+															  INNER JOIN meditEvents
+															  ON meditations.med_ID = meditEvents.med_ID
+															  WHERE meditEvents.per_ID = '$per_ID'
+															  AND meditEvents.medEventDay = '2015-04-05'
+															  AND meditEvents.medEventTime = '18:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="meditEvent"><strong>'.$row['med_name'].
+															'</strong></p>';
+															}
+														}else {echo'&nbsp;';}
+														
+														?>
+														<!--exercises-->
+														<?php
+														
+														$q = "SELECT exercises.exercise_name, exerciseEvents.exerciseEventDay, exerciseEvents.exerciseEventTime, exerciseEvents.per_ID
+															  FROM exercises
+															  INNER JOIN exerciseEvents
+															  ON exercises.exercise_ID = exerciseEvents.exercise_ID
+															  WHERE exerciseEvents.per_ID = '$per_ID'
+															  AND exerciseEvents.exerciseEventDay = '2015-04-05'
+															  AND exerciseEvents.exerciseEventTime = '18:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="exerciseEvent"><strong>'.$row['exercise_name'].
+															'</strong></p>';
+															}
+														}else {echo'&nbsp;';}
+														
+														?>
+								</td><td><!--Mon6p-9-->
+									<!--meals-->
+														<?php 
+														
+														$q = "SELECT meals.meal_name, mealEvents.mealevent_day, mealEvents.mealevent_time, mealEvents.per_ID
+															  FROM meals
+															  INNER JOIN mealEvents
+															  ON meals.meal_ID = mealEvents.meal_ID
+															  WHERE mealEvents.per_ID = '$per_ID'
+															  AND mealEvents.mealevent_day = '2015-04-06'
+															  AND mealEvents.mealevent_time = '18:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="mealEvent"><strong>'.$row['meal_name'].
+															'</strong></p>';
+															}//mysqli_close($dbc);
+														}else {echo'&nbsp;';}
+														
+														?>
+														<!--relaxation-->
+														<?php
+														
+														$q = "SELECT meditations.med_name, meditEvents.medEventDay, meditEvents.medEventTime, meditEvents.per_ID
+															  FROM meditations
+															  INNER JOIN meditEvents
+															  ON meditations.med_ID = meditEvents.med_ID
+															  WHERE meditEvents.per_ID = '$per_ID'
+															  AND meditEvents.medEventDay = '2015-04-06'
+															  AND meditEvents.medEventTime = '18:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="meditEvent"><strong>'.$row['med_name'].
+															'</strong></p>';
+															}
+														}else {echo'&nbsp;';}
+														
+														?>
+														<!--exercises-->
+														<?php
+														
+														$q = "SELECT exercises.exercise_name, exerciseEvents.exerciseEventDay, exerciseEvents.exerciseEventTime, exerciseEvents.per_ID
+															  FROM exercises
+															  INNER JOIN exerciseEvents
+															  ON exercises.exercise_ID = exerciseEvents.exercise_ID
+															  WHERE exerciseEvents.per_ID = '$per_ID'
+															  AND exerciseEvents.exerciseEventDay = '2015-04-06'
+															  AND exerciseEvents.exerciseEventTime = '18:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="exerciseEvent"><strong>'.$row['exercise_name'].
+															'</strong></p>';
+															}
+														}else {echo'&nbsp;';}
+														
+														?>
+								</td><td><!--Tues6p-9-->
+									<!--meals-->
+														<?php 
+														
+														$q = "SELECT meals.meal_name, mealEvents.mealevent_day, mealEvents.mealevent_time, mealEvents.per_ID
+															  FROM meals
+															  INNER JOIN mealEvents
+															  ON meals.meal_ID = mealEvents.meal_ID
+															  WHERE mealEvents.per_ID = '$per_ID'
+															  AND mealEvents.mealevent_day = '2015-04-07'
+															  AND mealEvents.mealevent_time = '18:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="mealEvent"><strong>'.$row['meal_name'].
+															'</strong></p>';
+															}//mysqli_close($dbc);
+														}else {echo'&nbsp;';}
+														
+														?>
+														<!--relaxation-->
+														<?php
+														
+														$q = "SELECT meditations.med_name, meditEvents.medEventDay, meditEvents.medEventTime, meditEvents.per_ID
+															  FROM meditations
+															  INNER JOIN meditEvents
+															  ON meditations.med_ID = meditEvents.med_ID
+															  WHERE meditEvents.per_ID = '$per_ID'
+															  AND meditEvents.medEventDay = '2015-04-07'
+															  AND meditEvents.medEventTime = '18:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="meditEvent"><strong>'.$row['med_name'].
+															'</strong></p>';
+															}
+														}else {echo'&nbsp;';}
+														
+														?>
+														<!--exercises-->
+														<?php
+														
+														$q = "SELECT exercises.exercise_name, exerciseEvents.exerciseEventDay, exerciseEvents.exerciseEventTime, exerciseEvents.per_ID
+															  FROM exercises
+															  INNER JOIN exerciseEvents
+															  ON exercises.exercise_ID = exerciseEvents.exercise_ID
+															  WHERE exerciseEvents.per_ID = '$per_ID'
+															  AND exerciseEvents.exerciseEventDay = '2015-04-07'
+															  AND exerciseEvents.exerciseEventTime = '18:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="exerciseEvent"><strong>'.$row['exercise_name'].
+															'</strong></p>';
+															}
+														}else {echo'&nbsp;';}
+														
+														?>
+								</td><td><!--Wed6p-9-->
+									<!--meals-->
+														<?php 
+														
+														$q = "SELECT meals.meal_name, mealEvents.mealevent_day, mealEvents.mealevent_time, mealEvents.per_ID
+															  FROM meals
+															  INNER JOIN mealEvents
+															  ON meals.meal_ID = mealEvents.meal_ID
+															  WHERE mealEvents.per_ID = '$per_ID'
+															  AND mealEvents.mealevent_day = '2015-04-08'
+															  AND mealEvents.mealevent_time = '18:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="mealEvent"><strong>'.$row['meal_name'].
+															'</strong></p>';
+															}//mysqli_close($dbc);
+														}else {echo'&nbsp;';}
+														
+														?>
+														<!--relaxation-->
+														<?php
+														
+														$q = "SELECT meditations.med_name, meditEvents.medEventDay, meditEvents.medEventTime, meditEvents.per_ID
+															  FROM meditations
+															  INNER JOIN meditEvents
+															  ON meditations.med_ID = meditEvents.med_ID
+															  WHERE meditEvents.per_ID = '$per_ID'
+															  AND meditEvents.medEventDay = '2015-04-08'
+															  AND meditEvents.medEventTime = '18:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="meditEvent"><strong>'.$row['med_name'].
+															'</strong></p>';
+															}
+														}else {echo'&nbsp;';}
+														
+														?>
+														<!--exercises-->
+														<?php
+														
+														$q = "SELECT exercises.exercise_name, exerciseEvents.exerciseEventDay, exerciseEvents.exerciseEventTime, exerciseEvents.per_ID
+															  FROM exercises
+															  INNER JOIN exerciseEvents
+															  ON exercises.exercise_ID = exerciseEvents.exercise_ID
+															  WHERE exerciseEvents.per_ID = '$per_ID'
+															  AND exerciseEvents.exerciseEventDay = '2015-04-08'
+															  AND exerciseEvents.exerciseEventTime = '18:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="exerciseEvent"><strong>'.$row['exercise_name'].
+															'</strong></p>';
+															}
+														}else {echo'&nbsp;';}
+														
+														?>
+								</td><td><!--Thurs6p-9-->
+									<!--meals-->
+														<?php 
+														
+														$q = "SELECT meals.meal_name, mealEvents.mealevent_day, mealEvents.mealevent_time, mealEvents.per_ID
+															  FROM meals
+															  INNER JOIN mealEvents
+															  ON meals.meal_ID = mealEvents.meal_ID
+															  WHERE mealEvents.per_ID = '$per_ID'
+															  AND mealEvents.mealevent_day = '2015-04-09'
+															  AND mealEvents.mealevent_time = '18:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="mealEvent"><strong>'.$row['meal_name'].
+															'</strong></p>';
+															}//mysqli_close($dbc);
+														}else {echo'&nbsp;';}
+														
+														?>
+														<!--relaxation-->
+														<?php
+														
+														$q = "SELECT meditations.med_name, meditEvents.medEventDay, meditEvents.medEventTime, meditEvents.per_ID
+															  FROM meditations
+															  INNER JOIN meditEvents
+															  ON meditations.med_ID = meditEvents.med_ID
+															  WHERE meditEvents.per_ID = '$per_ID'
+															  AND meditEvents.medEventDay = '2015-04-09'
+															  AND meditEvents.medEventTime = '18:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="meditEvent"><strong>'.$row['med_name'].
+															'</strong></p>';
+															}
+														}else {echo'&nbsp;';}
+														
+														?>
+														<!--exercises-->
+														<?php
+														
+														$q = "SELECT exercises.exercise_name, exerciseEvents.exerciseEventDay, exerciseEvents.exerciseEventTime, exerciseEvents.per_ID
+															  FROM exercises
+															  INNER JOIN exerciseEvents
+															  ON exercises.exercise_ID = exerciseEvents.exercise_ID
+															  WHERE exerciseEvents.per_ID = '$per_ID'
+															  AND exerciseEvents.exerciseEventDay = '2015-04-09'
+															  AND exerciseEvents.exerciseEventTime = '18:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="exerciseEvent"><strong>'.$row['exercise_name'].
+															'</strong></p>';
+															}
+														}else {echo'&nbsp;';}
+														
+														?>
+								</td><td><!--Fri6p-9-->
+									<!--meals-->
+														<?php 
+														
+														$q = "SELECT meals.meal_name, mealEvents.mealevent_day, mealEvents.mealevent_time, mealEvents.per_ID
+															  FROM meals
+															  INNER JOIN mealEvents
+															  ON meals.meal_ID = mealEvents.meal_ID
+															  WHERE mealEvents.per_ID = '$per_ID'
+															  AND mealEvents.mealevent_day = '2015-04-10'
+															  AND mealEvents.mealevent_time = '18:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="mealEvent"><strong>'.$row['meal_name'].
+															'</strong></p>';
+															}//mysqli_close($dbc);
+														}else {echo'&nbsp;';}
+														
+														?>
+														<!--relaxation-->
+														<?php
+														
+														$q = "SELECT meditations.med_name, meditEvents.medEventDay, meditEvents.medEventTime, meditEvents.per_ID
+															  FROM meditations
+															  INNER JOIN meditEvents
+															  ON meditations.med_ID = meditEvents.med_ID
+															  WHERE meditEvents.per_ID = '$per_ID'
+															  AND meditEvents.medEventDay = '2015-04-10'
+															  AND meditEvents.medEventTime = '18:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="meditEvent"><strong>'.$row['med_name'].
+															'</strong></p>';
+															}
+														}else {echo'&nbsp;';}
+														
+														?>
+														<!--exercises-->
+														<?php
+														
+														$q = "SELECT exercises.exercise_name, exerciseEvents.exerciseEventDay, exerciseEvents.exerciseEventTime, exerciseEvents.per_ID
+															  FROM exercises
+															  INNER JOIN exerciseEvents
+															  ON exercises.exercise_ID = exerciseEvents.exercise_ID
+															  WHERE exerciseEvents.per_ID = '$per_ID'
+															  AND exerciseEvents.exerciseEventDay = '2015-04-10'
+															  AND exerciseEvents.exerciseEventTime = '18:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="exerciseEvent"><strong>'.$row['exercise_name'].
+															'</strong></p>';
+															}
+														}else {echo'&nbsp;';}
+														
+														?>
+								</td><td><!--Sat6p-9-->
+									<!--meals-->
+														<?php 
+														
+														$q = "SELECT meals.meal_name, mealEvents.mealevent_day, mealEvents.mealevent_time, mealEvents.per_ID
+															  FROM meals
+															  INNER JOIN mealEvents
+															  ON meals.meal_ID = mealEvents.meal_ID
+															  WHERE mealEvents.per_ID = '$per_ID'
+															  AND mealEvents.mealevent_day = '2015-04-11'
+															  AND mealEvents.mealevent_time = '18:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="mealEvent"><strong>'.$row['meal_name'].
+															'</strong></p>';
+															}//mysqli_close($dbc);
+														}else {echo'&nbsp;';}
+														
+														?>
+														<!--relaxation-->
+														<?php
+														
+														$q = "SELECT meditations.med_name, meditEvents.medEventDay, meditEvents.medEventTime, meditEvents.per_ID
+															  FROM meditations
+															  INNER JOIN meditEvents
+															  ON meditations.med_ID = meditEvents.med_ID
+															  WHERE meditEvents.per_ID = '$per_ID'
+															  AND meditEvents.medEventDay = '2015-04-11'
+															  AND meditEvents.medEventTime = '18:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="meditEvent"><strong>'.$row['med_name'].
+															'</strong></p>';
+															}
+														}else {echo'&nbsp;';}
+														
+														?>
+														<!--exercises-->
+														<?php
+														
+														$q = "SELECT exercises.exercise_name, exerciseEvents.exerciseEventDay, exerciseEvents.exerciseEventTime, exerciseEvents.per_ID
+															  FROM exercises
+															  INNER JOIN exerciseEvents
+															  ON exercises.exercise_ID = exerciseEvents.exercise_ID
+															  WHERE exerciseEvents.per_ID = '$per_ID'
+															  AND exerciseEvents.exerciseEventDay = '2015-04-11'
+															  AND exerciseEvents.exerciseEventTime = '18:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="exerciseEvent"><strong>'.$row['exercise_name'].
+															'</strong></p>';
+															}
+														}else {echo'&nbsp;';}
+														
+														?>
+								</td></tr>
+								<tr><td>9pm -12am</td><td><!--Sun9p-12-->
+									<!--meals-->
+														<?php 
+														
+														$q = "SELECT meals.meal_name, mealEvents.mealevent_day, mealEvents.mealevent_time, mealEvents.per_ID
+															  FROM meals
+															  INNER JOIN mealEvents
+															  ON meals.meal_ID = mealEvents.meal_ID
+															  WHERE mealEvents.per_ID = '$per_ID'
+															  AND mealEvents.mealevent_day = '2015-04-05'
+															  AND mealEvents.mealevent_time = '21:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="mealEvent"><strong>'.$row['meal_name'].
+															'</strong></p>';
+															}//mysqli_close($dbc);
+														}else {echo'&nbsp;';}
+														
+														?>
+														<!--relaxation-->
+														<?php
+														
+														$q = "SELECT meditations.med_name, meditEvents.medEventDay, meditEvents.medEventTime, meditEvents.per_ID
+															  FROM meditations
+															  INNER JOIN meditEvents
+															  ON meditations.med_ID = meditEvents.med_ID
+															  WHERE meditEvents.per_ID = '$per_ID'
+															  AND meditEvents.medEventDay = '2015-04-05'
+															  AND meditEvents.medEventTime = '21:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="meditEvent"><strong>'.$row['med_name'].
+															'</strong></p>';
+															}
+														}else {echo'&nbsp;';}
+														
+														?>
+														<!--exercises-->
+														<?php
+														
+														$q = "SELECT exercises.exercise_name, exerciseEvents.exerciseEventDay, exerciseEvents.exerciseEventTime, exerciseEvents.per_ID
+															  FROM exercises
+															  INNER JOIN exerciseEvents
+															  ON exercises.exercise_ID = exerciseEvents.exercise_ID
+															  WHERE exerciseEvents.per_ID = '$per_ID'
+															  AND exerciseEvents.exerciseEventDay = '2015-04-05'
+															  AND exerciseEvents.exerciseEventTime = '21:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="exerciseEvent"><strong>'.$row['exercise_name'].
+															'</strong></p>';
+															}
+														}else {echo'&nbsp;';}
+														
+														?>
+								</td><td><!--Mon9p-12-->
+									<!--meals-->
+														<?php 
+														
+														$q = "SELECT meals.meal_name, mealEvents.mealevent_day, mealEvents.mealevent_time, mealEvents.per_ID
+															  FROM meals
+															  INNER JOIN mealEvents
+															  ON meals.meal_ID = mealEvents.meal_ID
+															  WHERE mealEvents.per_ID = '$per_ID'
+															  AND mealEvents.mealevent_day = '2015-04-06'
+															  AND mealEvents.mealevent_time = '21:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="mealEvent"><strong>'.$row['meal_name'].
+															'</strong></p>';
+															}//mysqli_close($dbc);
+														}else {echo'&nbsp;';}
+														
+														?>
+														<!--relaxation-->
+														<?php
+														
+														$q = "SELECT meditations.med_name, meditEvents.medEventDay, meditEvents.medEventTime, meditEvents.per_ID
+															  FROM meditations
+															  INNER JOIN meditEvents
+															  ON meditations.med_ID = meditEvents.med_ID
+															  WHERE meditEvents.per_ID = '$per_ID'
+															  AND meditEvents.medEventDay = '2015-04-06'
+															  AND meditEvents.medEventTime = '21:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="meditEvent"><strong>'.$row['med_name'].
+															'</strong></p>';
+															}
+														}else {echo'&nbsp;';}
+														
+														?>
+														<!--exercises-->
+														<?php
+														
+														$q = "SELECT exercises.exercise_name, exerciseEvents.exerciseEventDay, exerciseEvents.exerciseEventTime, exerciseEvents.per_ID
+															  FROM exercises
+															  INNER JOIN exerciseEvents
+															  ON exercises.exercise_ID = exerciseEvents.exercise_ID
+															  WHERE exerciseEvents.per_ID = '$per_ID'
+															  AND exerciseEvents.exerciseEventDay = '2015-04-06'
+															  AND exerciseEvents.exerciseEventTime = '21:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="exerciseEvent"><strong>'.$row['exercise_name'].
+															'</strong></p>';
+															}
+														}else {echo'&nbsp;';}
+														
+														?>
+								</td><td><!--Tues9p-12-->
+									<!--meals-->
+														<?php 
+														
+														$q = "SELECT meals.meal_name, mealEvents.mealevent_day, mealEvents.mealevent_time, mealEvents.per_ID
+															  FROM meals
+															  INNER JOIN mealEvents
+															  ON meals.meal_ID = mealEvents.meal_ID
+															  WHERE mealEvents.per_ID = '$per_ID'
+															  AND mealEvents.mealevent_day = '2015-04-07'
+															  AND mealEvents.mealevent_time = '21:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="mealEvent"><strong>'.$row['meal_name'].
+															'</strong></p>';
+															}//mysqli_close($dbc);
+														}else {echo'&nbsp;';}
+														
+														?>
+														<!--relaxation-->
+														<?php
+														
+														$q = "SELECT meditations.med_name, meditEvents.medEventDay, meditEvents.medEventTime, meditEvents.per_ID
+															  FROM meditations
+															  INNER JOIN meditEvents
+															  ON meditations.med_ID = meditEvents.med_ID
+															  WHERE meditEvents.per_ID = '$per_ID'
+															  AND meditEvents.medEventDay = '2015-04-07'
+															  AND meditEvents.medEventTime = '21:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="meditEvent"><strong>'.$row['med_name'].
+															'</strong></p>';
+															}
+														}else {echo'&nbsp;';}
+														
+														?>
+														<!--exercises-->
+														<?php
+														
+														$q = "SELECT exercises.exercise_name, exerciseEvents.exerciseEventDay, exerciseEvents.exerciseEventTime, exerciseEvents.per_ID
+															  FROM exercises
+															  INNER JOIN exerciseEvents
+															  ON exercises.exercise_ID = exerciseEvents.exercise_ID
+															  WHERE exerciseEvents.per_ID = '$per_ID'
+															  AND exerciseEvents.exerciseEventDay = '2015-04-07'
+															  AND exerciseEvents.exerciseEventTime = '21:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="exerciseEvent"><strong>'.$row['exercise_name'].
+															'</strong></p>';
+															}
+														}else {echo'&nbsp;';}
+														
+														?>
+								</td><td><!--Wed9p-12-->
+									<!--meals-->
+														<?php 
+														
+														$q = "SELECT meals.meal_name, mealEvents.mealevent_day, mealEvents.mealevent_time, mealEvents.per_ID
+															  FROM meals
+															  INNER JOIN mealEvents
+															  ON meals.meal_ID = mealEvents.meal_ID
+															  WHERE mealEvents.per_ID = '$per_ID'
+															  AND mealEvents.mealevent_day = '2015-04-08'
+															  AND mealEvents.mealevent_time = '21:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="mealEvent"><strong>'.$row['meal_name'].
+															'</strong></p>';
+															}//mysqli_close($dbc);
+														}else {echo'&nbsp;';}
+														
+														?>
+														<!--relaxation-->
+														<?php
+														
+														$q = "SELECT meditations.med_name, meditEvents.medEventDay, meditEvents.medEventTime, meditEvents.per_ID
+															  FROM meditations
+															  INNER JOIN meditEvents
+															  ON meditations.med_ID = meditEvents.med_ID
+															  WHERE meditEvents.per_ID = '$per_ID'
+															  AND meditEvents.medEventDay = '2015-04-08'
+															  AND meditEvents.medEventTime = '21:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="meditEvent"><strong>'.$row['med_name'].
+															'</strong></p>';
+															}
+														}else {echo'&nbsp;';}
+														
+														?>
+														<!--exercises-->
+														<?php
+														
+														$q = "SELECT exercises.exercise_name, exerciseEvents.exerciseEventDay, exerciseEvents.exerciseEventTime, exerciseEvents.per_ID
+															  FROM exercises
+															  INNER JOIN exerciseEvents
+															  ON exercises.exercise_ID = exerciseEvents.exercise_ID
+															  WHERE exerciseEvents.per_ID = '$per_ID'
+															  AND exerciseEvents.exerciseEventDay = '2015-04-08'
+															  AND exerciseEvents.exerciseEventTime = '21:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="exerciseEvent"><strong>'.$row['exercise_name'].
+															'</strong></p>';
+															}
+														}else {echo'&nbsp;';}
+														
+														?>
+								</td><td><!--Thurs9p-12-->
+									<!--meals-->
+														<?php 
+														
+														$q = "SELECT meals.meal_name, mealEvents.mealevent_day, mealEvents.mealevent_time, mealEvents.per_ID
+															  FROM meals
+															  INNER JOIN mealEvents
+															  ON meals.meal_ID = mealEvents.meal_ID
+															  WHERE mealEvents.per_ID = '$per_ID'
+															  AND mealEvents.mealevent_day = '2015-04-09'
+															  AND mealEvents.mealevent_time = '21:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="mealEvent"><strong>'.$row['meal_name'].
+															'</strong></p>';
+															}//mysqli_close($dbc);
+														}else {echo'&nbsp;';}
+														
+														?>
+														<!--relaxation-->
+														<?php
+														
+														$q = "SELECT meditations.med_name, meditEvents.medEventDay, meditEvents.medEventTime, meditEvents.per_ID
+															  FROM meditations
+															  INNER JOIN meditEvents
+															  ON meditations.med_ID = meditEvents.med_ID
+															  WHERE meditEvents.per_ID = '$per_ID'
+															  AND meditEvents.medEventDay = '2015-04-09'
+															  AND meditEvents.medEventTime = '21:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="meditEvent"><strong>'.$row['med_name'].
+															'</strong></p>';
+															}
+														}else {echo'&nbsp;';}
+														
+														?>
+														<!--exercises-->
+														<?php
+														
+														$q = "SELECT exercises.exercise_name, exerciseEvents.exerciseEventDay, exerciseEvents.exerciseEventTime, exerciseEvents.per_ID
+															  FROM exercises
+															  INNER JOIN exerciseEvents
+															  ON exercises.exercise_ID = exerciseEvents.exercise_ID
+															  WHERE exerciseEvents.per_ID = '$per_ID'
+															  AND exerciseEvents.exerciseEventDay = '2015-04-09'
+															  AND exerciseEvents.exerciseEventTime = '21:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="exerciseEvent"><strong>'.$row['exercise_name'].
+															'</strong></p>';
+															}
+														}else {echo'&nbsp;';}
+														
+														?>
+								</td><td><!--Fri9p-12-->
+									<!--meals-->
+														<?php 
+														
+														$q = "SELECT meals.meal_name, mealEvents.mealevent_day, mealEvents.mealevent_time, mealEvents.per_ID
+															  FROM meals
+															  INNER JOIN mealEvents
+															  ON meals.meal_ID = mealEvents.meal_ID
+															  WHERE mealEvents.per_ID = '$per_ID'
+															  AND mealEvents.mealevent_day = '2015-04-10'
+															  AND mealEvents.mealevent_time = '21:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="mealEvent"><strong>'.$row['meal_name'].
+															'</strong></p>';
+															}//mysqli_close($dbc);
+														}else {echo'&nbsp;';}
+														
+														?>
+														<!--relaxation-->
+														<?php
+														
+														$q = "SELECT meditations.med_name, meditEvents.medEventDay, meditEvents.medEventTime, meditEvents.per_ID
+															  FROM meditations
+															  INNER JOIN meditEvents
+															  ON meditations.med_ID = meditEvents.med_ID
+															  WHERE meditEvents.per_ID = '$per_ID'
+															  AND meditEvents.medEventDay = '2015-04-10'
+															  AND meditEvents.medEventTime = '21:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="meditEvent"><strong>'.$row['med_name'].
+															'</strong></p>';
+															}
+														}else {echo'&nbsp;';}
+														
+														?>
+														<!--exercises-->
+														<?php
+														
+														$q = "SELECT exercises.exercise_name, exerciseEvents.exerciseEventDay, exerciseEvents.exerciseEventTime, exerciseEvents.per_ID
+															  FROM exercises
+															  INNER JOIN exerciseEvents
+															  ON exercises.exercise_ID = exerciseEvents.exercise_ID
+															  WHERE exerciseEvents.per_ID = '$per_ID'
+															  AND exerciseEvents.exerciseEventDay = '2015-04-10'
+															  AND exerciseEvents.exerciseEventTime = '21:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="exerciseEvent"><strong>'.$row['exercise_name'].
+															'</strong></p>';
+															}
+														}else {echo'&nbsp;';}
+														
+														?>
+								</td><td><!--Sat9p-12-->
+									<!--meals-->
+														<?php 
+														
+														$q = "SELECT meals.meal_name, mealEvents.mealevent_day, mealEvents.mealevent_time, mealEvents.per_ID
+															  FROM meals
+															  INNER JOIN mealEvents
+															  ON meals.meal_ID = mealEvents.meal_ID
+															  WHERE mealEvents.per_ID = '$per_ID'
+															  AND mealEvents.mealevent_day = '2015-04-11'
+															  AND mealEvents.mealevent_time = '21:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="mealEvent"><strong>'.$row['meal_name'].
+															'</strong></p>';
+															}//mysqli_close($dbc);
+														}else {echo'&nbsp;';}
+														
+														?>
+														<!--relaxation-->
+														<?php
+														
+														$q = "SELECT meditations.med_name, meditEvents.medEventDay, meditEvents.medEventTime, meditEvents.per_ID
+															  FROM meditations
+															  INNER JOIN meditEvents
+															  ON meditations.med_ID = meditEvents.med_ID
+															  WHERE meditEvents.per_ID = '$per_ID'
+															  AND meditEvents.medEventDay = '2015-04-11'
+															  AND meditEvents.medEventTime = '21:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="meditEvent"><strong>'.$row['med_name'].
+															'</strong></p>';
+															}
+														}else {echo'&nbsp;';}
+														
+														?>
+														<!--exercises-->
+														<?php
+														
+														$q = "SELECT exercises.exercise_name, exerciseEvents.exerciseEventDay, exerciseEvents.exerciseEventTime, exerciseEvents.per_ID
+															  FROM exercises
+															  INNER JOIN exerciseEvents
+															  ON exercises.exercise_ID = exerciseEvents.exercise_ID
+															  WHERE exerciseEvents.per_ID = '$per_ID'
+															  AND exerciseEvents.exerciseEventDay = '2015-04-11'
+															  AND exerciseEvents.exerciseEventTime = '21:00:00' ";
+														$r = mysqli_query($dbc, $q);
+														if (mysqli_num_rows($r) > 0)
+														{
+															while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
+															{
+															echo '<p class ="exerciseEvent"><strong>'.$row['exercise_name'].
+															'</strong></p>';
+															}
+														}else {echo'&nbsp;';}
+														
+														?>
+								</td></tr>
 							</tbody>
 						</table> 
 						
