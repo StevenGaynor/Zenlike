@@ -12,9 +12,9 @@ $_SESSION = array();
 
 session_destroy();
 
-echo '<h2> Thanks for using Zenlike!</h2>
+echo '<main><section><h2> Thanks for using Zenlike!</h2>
 	  <p>Logged out successfully. See you again soon...</p>
-	  <p><a href="login.php">Login</a></p>';
+	  <p><a href="login.php">Login</a></p></section></main>';
 
 include ('includes/footer.html');
 
