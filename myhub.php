@@ -2717,7 +2717,7 @@ echo  "<main>
 														
 														?>
 								</td></tr>
-								<tr><td><!--clear each day--></td><td>Clear</td><td>Clear</td><td>Clear</td><td>Clear</td><td>Clear</td><td>Clear</td><td>Clear</td></tr>
+								<p><!--clear the table--><span id="clearCalendar"><a href="clearCalendar.php">CLEAR Calendar</a></span></p>
 							</tbody>
 						</table> 
 						
