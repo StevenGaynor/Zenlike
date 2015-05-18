@@ -2720,7 +2720,7 @@ echo  "<main>
 							</tbody>
 						</table> 
 						
-						<p><!--clear the table--><span id="clearCalendar"><a href="clearCalendar.php">CLEAR Calendar</a></span></p>
+						<p><!--clear the table--><span id="clearCalendar"><a href="clearCalendar.php" onclick="return confirm('Are you sure you want to clear your events?');">CLEAR Calendar</a></span></p>
 						
 						<h3>MyEvents</h3>
 						<p><a href='choosemeals.php'>Choose Meals</a></p>
