@@ -31,6 +31,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
 			exit();
 		}
 }
+//the seq below is if there is a null result returned for above
 if($_SERVER['REQUEST_METHOD'] == 'POST')
 {
 	$exercise_ID = $_POST['exercise_ID'];
