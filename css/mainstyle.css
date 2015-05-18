@@ -275,9 +275,13 @@ td:nth-of-type(8) {
 			border-radius: 3px;
 			padding: 0 2px 0 2px;}
 			
-#clearCalendar {color: white;
+#clearCalendar {padding: 5px 5px 5px 5px;
 				background-color: red;
 				font-size: 14;}
+#clearCalendar a {text-decoration: none;}
+#clearCalendar a:link {color: white;}
+#clearCalendar a:visited {color: white;}
+#clearCalendar a:hover {background-color: pink;}
 		
 			/*responsive calender*/
 				@media only screen and (max-width: 760px),(min-device-width: 768px) and (max-device-width: 1024px)  {

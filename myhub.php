@@ -2717,9 +2717,10 @@ echo  "<main>
 														
 														?>
 								</td></tr>
-								<p><!--clear the table--><span id="clearCalendar"><a href="clearCalendar.php">CLEAR Calendar</a></span></p>
 							</tbody>
 						</table> 
+						
+						<p><!--clear the table--><span id="clearCalendar"><a href="clearCalendar.php">CLEAR Calendar</a></span></p>
 						
 						<h3>MyEvents</h3>
 						<p><a href='choosemeals.php'>Choose Meals</a></p>
