@@ -1,4 +1,10 @@
 <?php
+/*
+*HDCLOUD Project : Zenlike
+*Name: Steven Gaynor
+*Student Number: 14108038
+*Date Submitted: 20/5/2015
+*/
 session_start(); 
 
 # Redirect if not logged in.

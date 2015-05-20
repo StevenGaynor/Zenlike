@@ -1,3 +1,9 @@
+<!--/*
+*HDCLOUD Project : Zenlike
+*Name: Steven Gaynor
+*Student Number: 14108038
+*Date Submitted: 20/5/2015
+*/-->
 <!DOCTYPE html>
 <html lang = "en">
 	<head>
@@ -32,6 +38,7 @@
 				<section>
 					
 						<?php 
+							/*the code below checks the email isn't already in database, trims and escapes MySQL injections, hashes the user password and inserts valid data to Persons table, auto-incrementing with each new entry*/
 							if ($_SERVER['REQUEST_METHOD'] == 'POST')
 							{
 								require('../connect_db.php');

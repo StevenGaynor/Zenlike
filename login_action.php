@@ -1,4 +1,10 @@
 <?php
+/*
+*HDCLOUD Project : Zenlike
+*Name: Steven Gaynor
+*Student Number: 14108038
+*Date Submitted: 20/5/2015
+*/
 	if($_SERVER['REQUEST_METHOD'] == 'POST')
 	{
 		require('../connect_db.php');

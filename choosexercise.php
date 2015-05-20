@@ -1,4 +1,10 @@
 <?php 
+/*
+*HDCLOUD Project : Zenlike
+*Name: Steven Gaynor
+*Student Number: 14108038
+*Date Submitted: 20/5/2015
+*/
 
 session_start();
 
@@ -20,7 +26,9 @@ require('../connect_db.php');
 					echo "<p id='loggedInMsg'>Welcome <b><u>{$_SESSION['first_name']}&nbsp;{$_SESSION['surname']}</u></b>&nbsp;|&nbsp;<a id='myHubButton' href='myhub.php'>MyHub</a>&nbsp;|&nbsp;<span id='logoutButton'><a href='logout.php'>Logout</a></span></p>";
 						$q = "SELECT * FROM exercises";
 						$r = mysqli_query($dbc, $q);
-
+						
+						//code below outputs data returned from table in HTML format
+						
 						if (mysqli_num_rows($r) > 0) {
 							while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC))
 							{

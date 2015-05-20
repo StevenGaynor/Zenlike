@@ -1,4 +1,10 @@
 <?php 
+/*
+*HDCLOUD Project : Zenlike
+*Name: Steven Gaynor
+*Student Number: 14108038
+*Date Submitted: 20/5/2015
+*/
 	$page_title = 'Login';
 	include('includes/header.html');
 	if(isset($errors) && !empty($errors))

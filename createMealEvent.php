@@ -1,4 +1,10 @@
 <?php 
+/*
+*HDCLOUD Project : Zenlike
+*Name: Steven Gaynor
+*Student Number: 14108038
+*Date Submitted: 20/5/2015
+*/
 session_start();
 
 if(!isset($_SESSION['per_ID']))
@@ -31,6 +37,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
 			exit();
 		}
 }
+/*if the calendar slot is free, the new event is created in the db*/
 if($_SERVER['REQUEST_METHOD'] == 'POST')
 {
 	$meal_ID = $_POST['meal_ID'];

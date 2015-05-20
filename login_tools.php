@@ -1,5 +1,10 @@
 <?php
-
+/*
+*HDCLOUD Project : Zenlike
+*Name: Steven Gaynor
+*Student Number: 14108038
+*Date Submitted: 20/5/2015
+*/
 function load($page='login.php')
 {
 	$url='http://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['PHP_SELF']);
@@ -9,7 +14,7 @@ function load($page='login.php')
 	header("Location: $url");
 	exit();
 }
-
+/*validates user's login credentials, escapes MySQL injections etc.*/
 function validate($dbc, $email, $pass)
 {
 	$errors=array();
